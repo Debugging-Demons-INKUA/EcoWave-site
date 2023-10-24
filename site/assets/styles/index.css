@@ -1,0 +1,149 @@
+/* Estilo Normalizado */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ---------- HEADER ---------- */
+header {
+    min-height: 15vh;
+}
+
+#header-nav {
+    background-color: white !important;
+    min-height: 14vh;
+    z-index: 1;
+}
+
+/* nav {
+    position: sticky !important;
+    top: 0px !important;
+} */
+
+
+.navbar {
+    background-color: white !important;
+    height: 15vh;
+    width: 100%;
+    position: fixed !important;
+}
+
+#navbarNav {
+    justify-content: end;
+    align-items: center;
+    font-size: larger;
+}
+
+.container-fluid {
+    background-color: white;
+}
+
+.navbar-nav {
+    background-color: white;
+    font-size: 120%;
+    gap: 1rem;
+    align-items: center !important;
+    padding: 1rem;
+    margin-bottom: .5rem;
+}
+
+.nav-item {
+    padding-right: .5rem;
+}
+
+.nav-link {
+    font-weight: bold !important;
+}
+
+.nav-link:hover {
+    text-decoration: underline rgb(74, 121, 2);
+}
+
+.active {
+    color: rgb(74, 121, 2) !important;
+}
+
+.icono {
+    width: 8rem;
+}
+
+/* ---------- MAIN ---------- */
+main {
+    background-color: white;
+    min-height: 80vw;
+}
+
+/* Imagen */
+.iconContainer {
+    width: 100%;
+    padding-top: 3rem;
+}
+
+/* Mision */
+.misionContainer {
+    width: 100%;
+}
+
+.misionText {
+    color: rgb(74, 121, 2);
+    padding: 2rem;
+    width: 80%;
+}
+
+/* Clasificacion de Residuos */
+.title01 {
+    color: rgb(152, 58, 11);
+}
+
+.card {
+    margin-bottom: 1rem;
+}
+
+.card-title {
+    height: 3rem;
+}
+
+.cardLink {
+    color: rgb(18, 157, 157);
+    text-decoration: none;
+}
+
+.cardLink:hover {
+    color: rgb(74, 121, 2);
+    text-decoration: underline;
+}
+
+/* Noticias */
+.title02 {
+    margin-top: 2rem;
+    color: rgb(152, 58, 11);
+}
+
+.noticiasSection {
+    width: 100%;
+}
+
+.noticiasContainer {
+    width: 90%;
+}
+
+#botonNoticias {
+    color: white;
+    font-weight: bold;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+    margin-top: 2rem;
+    min-height: 5rem;
+    background-color: black;
+}
+
+.footerContainer {
+    padding-top: 1rem;
+}
+
+.footerText {
+    color: white;
+}
