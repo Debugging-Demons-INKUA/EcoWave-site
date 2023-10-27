@@ -53,4 +53,46 @@ body {
     color: #505050;
   }
 
+  @media (min-width: 450px) {
+    h1.heading {
+      font-size: 3.55em;
+    }
+    .fostrap-logo-mundo{
+      width: 400px !important;
+    margin-bottom:15px;
+  }
+  .fostrap-logo-mundo-manos{
+      width: 400px !important;
+    
+  }
+  }
+  @media (min-width: 760px) {
+    h1.heading {
+      font-size: 3.05em;
+    }
+    .fostrap-logo-mundo{
+      width: 900px !important;
+    margin-bottom:15px;
+  }
+  .fostrap-logo-mundo-manos{
+      width: 80% !important;
+    margin-bottom:15px;
+  }
+  }
+  @media (min-width: 900px) {
+    h1.heading {
+      font-size: 3.25em;
+      margin: 0 0 0.3em;
+    }
+    .fostrap-logo-mundo{
+      width: 1300px !important;
+    margin-bottom:15px;
+  }
+  .fostrap-logo-mundo-manos{
+      width: 100% !important;
+      height: 100vh !important;
+    margin-bottom:15px;
+  }
+
   
+
