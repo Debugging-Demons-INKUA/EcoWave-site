@@ -9,3 +9,15 @@
     --verdeoscuro: #00665E;
 }
 
+html,
+body {
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  height: 100%;
+  width: 100%; 
+  background: #FFF;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  background-color: var(--grisclaro) !important;
+}
+
