@@ -147,6 +147,17 @@ body {
     text-transform: uppercase
   }
 
-  
+a:hover{
+    color: var(--verdeclaro) !important;
+}
+.titulo{
+    color: var(--verdeoscuro) !important;
+}
+a{
+    color:black !important;
+}
+
+
+
 
 
