@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.recycling-box {
+  border: 1px solid #000;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+}
+
+.plastic {
+  background-color: #f2c46e;
+}
+
+.glass {
+  background-color: #a9d6e5;
+}
+
+.metal {
+  background-color: #b1c2a0;
+}
+
+.hazardous {
+  background-color: #f26c4f;
+}
+
+.hidden {
+  display: none;
+}
