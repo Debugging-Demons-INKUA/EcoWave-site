@@ -123,6 +123,16 @@ body {
     transition: all .25s ease;
   } 
 
+  .card-content {
+    padding:15px;
+    text-align:left;
+  }
+  .card-title {
+    margin-top:0px;
+    font-weight: 700;
+    font-size: 1.65em;
+  }
+
   
 
 
