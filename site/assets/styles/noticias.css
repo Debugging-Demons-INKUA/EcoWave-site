@@ -21,3 +21,36 @@ body {
   background-color: var(--grisclaro) !important;
 }
 
+.wrapper {
+    display: table;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .container-fostrap {
+    display: table-cell;
+    padding: 1em;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .fostrap-logo {
+    width: 100px;
+    margin-bottom:15px;
+  }
+  .fostrap-logo-mundo{
+      width: 100px;
+    margin-bottom:15px;
+  }
+  .fostrap-logo-mundo-manos{
+      width: 100px;
+    margin-bottom:15px;
+  }
+  h1.heading {
+    color: #fff;
+    font-size: 1.15em;
+    font-weight: 900;
+    margin: 0 0 0.5em;
+    color: #505050;
+  }
+
+  
