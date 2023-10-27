@@ -1,14 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./assets/styles/reciclaje.css">
 </head>
-
 <body>
+  <h1>Reciclaje de Materiales</h1>
 
+  <div class="container">
+    <div class="recycling-box plastic">
+      <h2>Plásticos</h2>
+      <p id="plastic-more" style="display: none;">Los plásticos deben ser separados por tipo (PET, HDPE, PVC, etc.) y depositados en los contenedores correspondientes para su reciclaje.</p>
+      <h3>Reciclaje de Plásticos en Casa</h3>
+      <ol>
+        <li>Enjuaga y limpia los envases de plástico.</li>
+        <li>Clasifica los plásticos por tipo (por ejemplo, botellas de agua en una bolsa y envases de yogur en otra).</li>
+        <li>Deposita los plásticos limpios y clasificados en tu contenedor de reciclaje de plásticos.</li>
+      </ol>
+      <div class="read-more-button" onclick="toggleReadMore('plastic')">Leer Más</div>
+    </div>
+
+    <div class="recycling-box glass">
+      <h2>Vidrios</h2>
+      <p id="glass-more" style="display: none;">Los vidrios son 100% reciclables. Deposítalos en contenedores de vidrio para su reciclaje.</p>
+      <h3>Reciclaje de Vidrios en Casa</h3>
+      <ol>
+        <li>Lava los envases de vidrio y retira las etiquetas si es necesario.</li>
+        <li>Coloca los vidrios limpios en el contenedor de vidrio de reciclaje.</li>
+      </ol>
+      <div class="read-more-button" onclick="toggleReadMore('glass')">Leer Más</div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="recycling-box metal">
+      <h2>Metales</h2>
+      <p id="metal-more" style="display: none;">Los metales, como aluminio y acero, pueden ser reciclados infinitas veces. Deposítalos en contenedores de metal para su reciclaje.</p>
+      <h3>Reciclaje de Metales en Casa</h3>
+      <ol>
+        <li>Guarda las latas de aluminio, envases de acero y otros objetos metálicos en una bolsa o contenedor separado.</li>
+        <li>Limpia los objetos metálicos de residuos antes de reciclarlos.</li>
+        <li>Coloca los objetos metálicos limpios en tu contenedor de reciclaje de metales.</li>
+      </ol>
+      <div class="read-more-button" onclick="toggleReadMore('metal')">Leer Más</div>
+    </div>
+
+    <div class="recycling-box hazardous">
+      <h2>Residuos Peligrosos</h2>
+      <p id="hazardous-more" style="display: none;">Los residuos peligrosos, como baterías y productos químicos, deben ser manejados y desechados adecuadamente en centros de recogida específicos para evitar la contaminación del medio ambiente.</p>
+      <h3>Manejo de Residuos Peligrosos en Casa</h3>
+      <ol>
+        <li>No mezcles residuos peligrosos con la basura común.</li>
+        <li>Guarda las baterías usadas y productos químicos en un lugar seguro y fuera del alcance de los niños.</li>
+        <li>Localiza un centro de recogida de residuos peligrosos en tu área y sigue sus instrucciones para la disposición adecuada.</li>
+      </ol>
+      <div class="read-more-button" onclick="toggleReadMore('hazardous')">Leer Más</div>
+    </div>
+  </div>
+  <script src="./js/reciclaje.js"></script>
 </body>
-
 </html>
