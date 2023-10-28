@@ -1,32 +1,70 @@
-.container {
-  display: flex;
-  justify-content: space-around;
-  margin: 20px;
+:root {
+  --grisclaro: #ECECEC;
+  --grisoscuro: #333333;
+  --azulclaro: #3498DB;
+  --azuloscuro: #2980B9;
+  --amarillosuave: #FFD700;
+  --verdeclaro: #00A896;
+  --verdeoscuro: #00665E;
 }
 
-.recycling-box {
-  border: 1px solid #000;
+body {
+  background-color: var(--grisclaro);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  padding: 30px;
+}
+
+.recycle-info {
+  margin-bottom: 20px;
   padding: 20px;
-  width: 200px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
   text-align: center;
+  font-family: "Lato", sans-serif; /* Aplicar la fuente Lato al título h1 */
+}
+
+.recycle-card {
+  margin-bottom: 20px;
+}
+
+.recycle-card h2 {
+  background-color: #f2f2f2;
+  padding: 10px;
+  font-family: "Nunito", sans-serif; /* Aplicar la fuente Nunito a los subtítulos h2 */
 }
 
 .plastic {
   background-color: #f2c46e;
 }
 
+.organic-non-recyclable {
+  background-color: #b3d100;
+}
+
+.organic-compostable {
+  background-color: #00af91;
+}
+
+.paper-cardboard {
+  background-color: #f0ca4d;
+}
+
 .glass {
-  background-color: #a9d6e5;
+  background-color: #00a0df;
 }
 
 .metal {
-  background-color: #b1c2a0;
+  background-color: #af9f9d;
 }
 
 .hazardous {
-  background-color: #f26c4f;
-}
-
-.hidden {
-  display: none;
+  background-color: #ff524f;
 }
