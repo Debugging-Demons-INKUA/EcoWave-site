@@ -85,11 +85,45 @@ main {
     min-height: 80vw;
 }
 
-/* Imagen */
-.iconContainer {
-    width: 100%;
-    padding-top: 3rem;
+/* --Banner Slider-- */
+
+.bannerIndex .bslide {
+    border: 3px solid #00A896;
+    border-radius: 15px;
+    height: 350px;
+    margin-top: 2.5rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
+
+.bannerIndex .bslide .banner-image {
+    flex: 1 1 35rem;
+}
+
+.bannerIndex .bslide .banner-image img {
+    width: 75%;
+}
+
+.bannerIndex .bslide .banner-content {
+    padding-left: 8rem;
+    flex: 1 1 40rem;
+    text-align: center;
+}
+
+.bannerIndex .bslide .banner-content h3{
+    font-size: 3rem;
+    color: var(--verdeoscuro);
+}
+
+.bannerIndex .bslide .banner-content span{
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    color: var(--grisoscuro);
+    text-transform: lowercase;
+}
+
 
 /* Mision */
 .misionContainer {
