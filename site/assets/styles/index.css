@@ -85,31 +85,106 @@ main {
     min-height: 80vw;
 }
 
-/* Imagen */
-.iconContainer {
-    width: 100%;
-    padding-top: 3rem;
+
+/* --Mision-- */
+.misionContainer { 
+    width: 100%;    
+    text-align: center;
 }
 
-/* Mision */
-.misionContainer {
-    width: 100%;
+.misionContainer .misionIndex img{   
+    margin-top: 4rem;
+    width: 12%;
 }
 
-.misionText {
-    color: rgb(74, 121, 2);
-    padding: 2rem;
-    width: 80%;
+.misionContainer .misionIndex h2{ 
+    padding: 1rem;
+    color: var(--verdeoscuro);
+    font-size: 2.2rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.misionContainer .misionIndex p{
+    color: var(--grisoscuro);
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;    
+    font-size: 1.2rem;
+    padding: 0 4rem 0;
+}
+
+
+/* --Banner Slider-- */
+
+.bannerIndex .bslide {
+    border-radius: 20px;
+    height: 350px;
+    margin-top: 2.5rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    box-shadow: 0px 0px 4px 2px rgba(1, 46, 10, 0.2);
+}
+
+.bannerIndex .bslide .banner-image {
+    flex: 1 1 35rem;
+}
+
+.bannerIndex .bslide .banner-image img {
+    width: 75%;
+}
+
+.bannerIndex .bslide .banner-content {
+    padding-left: 8rem;
+    flex: 1 1 40rem;
+    text-align: center;
+}
+
+.bannerIndex .bslide .banner-content h3{
+    font-size: 2.5rem;
+    color: var(--verdeclaro);
+    font-family: "Roboto", sans-serif;
+}
+
+.bannerIndex .bslide .banner-content span{
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    color: var(--grisoscuro);
+    text-transform: lowercase;    
+    font-family: "Roboto", sans-serif;
+}
+
+.bannerIndex .bslide .banner-content button{
+    border: none;
+    border-radius: 10px;
+    background-color: var(--verdeoscuro);
+    padding: 10px 15px;
+    margin-top: 40px;   
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;    
+    font-size: 1.1rem;
+    color: var(--grisclaro);
+    box-shadow: inset 0 0 0 0 #FFD700;
+    transition: ease-out 0.4s;
+    outline: none;
+}
+
+.bannerIndex .bslide .banner-content button:hover{
+    box-shadow: inset 150px 0 0 0 #FFD700;
+    cursor: pointer;
+    color: var(--grisoscuro);
 }
 
 
 /* --Clasificacion de Residuos-- */
 
-
 .categoria-container .index-categoria-title{
     text-align: center;
     margin-bottom: 2.5rem;
     margin-top: 2.5rem;
+    padding: 3rem 0 0;
     color: var(--verdeoscuro);
     font-size: 2.2rem;
     font-family: "Roboto", sans-serif;
