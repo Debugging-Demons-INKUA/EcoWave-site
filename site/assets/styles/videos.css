@@ -46,12 +46,17 @@ section {
     padding: 2rem;
 }
 
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 /* Videos */
 iframe {
     width: 100%;
     max-width: 560px;
-    height: auto;
-    margin: 1rem 0;
+    margin: 1rem 5px;
 }
 
 /* Footer */
