@@ -54,6 +54,23 @@
 
     <main>
 
+        <!-- Columna del texto de la misión -->        
+        <section class="misionContainer">   
+                <div class="misionIndex">
+                    <h2>Nuestra Misión</h2>
+                    <p>
+                        Nuestra misión es liderar la lucha por la sostenibilidad ambiental.
+                        Nos dedicamos a la gestión de residuos, la recuperación de recursos
+                        y el reciclaje, al tiempo que fomentamos la conciencia ambiental
+                        y la educación. A través de nuestra plataforma, proporcionamos
+                        recursos y guías para reducir el desperdicio y reciclar de manera
+                        eficaz, además de ofrecer contenido educativo accesible que inspire
+                        a las personas a tomar medidas sostenibles en su vida diaria.
+                    </p>
+                </div>
+        </section>
+
+        <!--Seccion BANNER-->
         <section class="bannerIndex">
             <div class="swiper banner-slider">
                 <div class="swiper-wrapper">
@@ -61,7 +78,13 @@
                         <div class="banner-content">
                             <h3>Reduce, reutiliza, recicla</h3>
                             <span>Pequeños cambios, grandes impactos.</span><br>
-                            <a href="#index-categoria" class="btn-banner">¡Me interesa!</a>
+                            <button onclick="irASeccion()">¡Me interesa!</button>
+                            <script>
+                                function irASeccion() {
+                                    var destino = document.getElementById('categorias');
+                                    destino.scrollIntoView({ behavior: 'smooth' });
+                                }
+                            </script>
                         </div>
                         <div class="banner-image">
                             <img src="/site/assets/images/banner-image1.png" alt="Cuidando el mundo">
@@ -71,19 +94,31 @@
                     <div class="swiper-slide bslide">
                         <div class="banner-content">
                             <h3>Recicla y transforma el mundo</h3>
-                            <span>Cada reciclaje cuenta en la construcción de un futuro sostenible.</span><br>
-                            <a href="#categoria-container" class="btn-banner">¡Me interesa!</a>
+                            <span>Cada reciclaje cuenta en la construcción de un futuro sostenible.</span><br>                            
+                            <button onclick="irASeccion()">¡Me interesa!</button>
+                            <script>
+                                function irASeccion() {
+                                    var destino = document.getElementById('categorias');
+                                    destino.scrollIntoView({ behavior: 'smooth' });
+                                }
+                            </script>                           
                         </div>
                         <div class="banner-image">
                             <img src="/site/assets/images/banner-image3.png" alt="Cuidando el mundo">
-                        </div>
+                        </div> 
                     </div>
 
                     <div class="swiper-slide bslide">
                         <div class="banner-content">
                             <h3>Haz eco con tu reciclaje</h3>
                             <span>Tus acciones diarias marcan la pauta para un mañana sostenible.</span><br>
-                            <a href="#categoria-container" class="btn-banner">¡Me interesa!</a>
+                            <button onclick="irASeccion()">¡Me interesa!</button>
+                            <script>
+                                function irASeccion() {
+                                    var destino = document.getElementById('categorias');
+                                    destino.scrollIntoView({ behavior: 'smooth' });
+                                }
+                            </script>
                         </div>
                         <div class="banner-image">
                             <img src="/site/assets/images/banner-image2.png" alt="Cuidando el mundo">
@@ -93,32 +128,9 @@
                 <div class="swiper-pagination"></div>
             </div>
         </section>
-
-        
-                            
-                    <!-- Columna del texto de la misión -->
-                                <div class="col-md-6">
-                                    <h2 class="display-4">Nuestra Misión</h2>
-                                    <p class="lead misionText">
-                                        Nuestra misión es liderar la lucha por la sostenibilidad ambiental.
-                                        Nos dedicamos a la gestión de residuos, la recuperación de recursos
-                                        y el reciclaje, al tiempo que fomentamos la conciencia ambiental
-                                        y la educación. A través de nuestra plataforma, proporcionamos
-                                        recursos y guías para reducir el desperdicio y reciclar de manera
-                                        eficaz, además de ofrecer contenido educativo accesible que inspire
-                                        a las personas a tomar medidas sostenibles en su vida diaria.
-                                    </p>
-                                </div>
-                                <!-- Columna de la imagen -->
-                                <div class="col-md-6 mt-3">
-                                    <img src="./assets/images/concientizacion.jpg" alt="Imagen de misión" class="img-fluid">
-                                </div>
-                            </div>
-                        </div>
-                    </section>
                     
-        <!-- Clasificacion de Residuos inicio -->
-        <section class="categoria-container"> 
+        <!--Seccion CLASIFICACION de Residuos inicio -->
+        <section class="categoria-container" id="categorias"> 
                     
             <h2 class="index-categoria-title">¿Como se clasifican los residuos?</h2>
 
