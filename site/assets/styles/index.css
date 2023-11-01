@@ -92,8 +92,12 @@ main {
     text-align: center;
 }
 
-.misionContainer .misionIndex h2{    
+.misionContainer .misionIndex img{   
     margin-top: 4rem;
+    width: 12%;
+}
+
+.misionContainer .misionIndex h2{ 
     padding: 1rem;
     color: var(--verdeoscuro);
     font-size: 2.2rem;
@@ -151,7 +155,6 @@ main {
     text-transform: lowercase;    
     font-family: "Roboto", sans-serif;
 }
-
 
 .bannerIndex .bslide .banner-content button{
     border: none;
