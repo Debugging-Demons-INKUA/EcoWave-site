@@ -5,6 +5,16 @@
     padding: 0;
 }
 
+:root {
+    --grisclaro: #ECECEC;
+    --grisoscuro: #333333;
+    --azulclaro: #3498DB;
+    --azuloscuro: #2980B9;
+    --amarillosuave: #FFD700;
+    --verdeclaro: #00A896;
+    --verdeoscuro: #00665E;
+}
+
 /* ---------- HEADER ---------- */
 header {
     min-height: 15vh;
@@ -57,11 +67,11 @@ header {
 }
 
 .nav-link:hover {
-    text-decoration: underline rgb(74, 121, 2);
+    text-decoration: underline var(--verdeoscuro);
 }
 
 .active {
-    color: rgb(74, 121, 2) !important;
+    color: var(--verdeoscuro) !important;
 }
 
 .icono {
@@ -69,13 +79,132 @@ header {
 }
 
 /* ---------- MAIN ---------- */
-/* Imagen Quienes somos */
+/* Imagen Quienes Somos */
 .imgContainer {
     width: 100%;
-    height: 20rem;
-    border: solid 1px red;
+    height: 22rem;
     margin-top: 1rem;
-    background-image: ;
+    background-image: url(../images/fondoAbout2.jpg);
+    background-size: cover;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+}
+
+.imgText {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--verdeoscuro);
+}
+
+/* Texto Quienes Somos */
+.aboutContainer {
+    width: 100%;
+    padding: 1rem;
+}
+
+.aboutText {
+    width: 80%;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 500;
+    color: var(--grisoscuro);
+}
+
+/* Equipo */
+.equipoContainer {}
+
+.equipoTitle {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--verdeoscuro);
+}
+
+/* Botones Sobre Nosotros */
+.usContainer {
+    width: 70%;
+    margin: auto;
+}
+
+/* Boton sociales */
+.link {
+    text-decoration: none;
+    text-align: center;
+}
+
+.nombreLink {
+    margin-top: 5px;
+}
+
+.social-links,
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--grisoscuro);
+}
+
+.social-btn {
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    font-family: 'Titillium Web', sans-serif;
+    color: var(--grisoscuro);
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    background: white;
+    margin: 5px;
+    transition: 0.3s;
+    justify-content: center;
+}
+
+.social-btn svg {
+    height: 30px;
+    width: 30px;
+}
+
+.utnIcon {
+    height: 28px;
+}
+
+.social-btn span {
+    width: 0px;
+    overflow: hidden;
+    transition: 0.3s;
+    text-align: center;
+    margin-left: 5px;
+    align-self: center;
+}
+
+.social-btn:hover {
+    width: 120px;
+    border-radius: 5px;
+}
+
+.social-btn:hover span {
+    padding: 2px;
+    width: 70px;
+}
+
+#equipo svg {
+    fill: var(--azuloscuro);
+}
+
+#github svg {
+    fill: #333;
 }
 
 /* ---------- FOOTER ---------- */
+footer {
+    margin-top: 2rem;
+    min-height: 5rem;
+    background-color: black;
+}
+
+.footerContainer {
+    padding-top: 1rem;
+}
+
+.footerText {
+    color: white;
+}
