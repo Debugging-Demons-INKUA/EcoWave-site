@@ -92,9 +92,14 @@ header {
 }
 
 .imgText {
-    font-size: 3rem;
-    font-weight: bold;
+    font-size: 45px;
     color: var(--verdeoscuro);
+}
+
+#spanImgText {
+    font-size: 50px;
+    color: var(--azuloscuro);
+    font-weight: bold;
 }
 
 /* Texto Quienes Somos */
@@ -113,9 +118,15 @@ header {
 
 /* Equipo */
 .equipoTitle {
-    font-size: 2rem;
+    font-size: 35px;
     font-weight: bold;
     color: var(--verdeoscuro);
+}
+
+#spanEquipoTitle {
+    font-size: 40px;
+    color: var(--azuloscuro);
+    font-weight: bold;
 }
 
 /* Botones Sobre Nosotros */
