@@ -1,0 +1,93 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', 'Lato', sans-serif;
+    background-color: #ECECEC;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333333;
+}
+
+a {
+    color: #333333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #2980B9;
+}
+
+/* Encabezado y navegación */
+nav {
+    background-color: #00A896;
+    color: #333333;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+/* Títulos */
+h2 {
+    font-family: 'Consolas', monospace;
+    color: #00665E;
+    text-align: center; /* Centrar títulos */
+    margin-bottom: 2rem; /* Espacio entre títulos y contenido */
+}
+
+/* Secciones */
+section {
+    padding: 2rem;
+    text-align: center; /* Centrar el contenido */
+}
+
+/* Videos */
+iframe {
+    width: 100%;
+    max-width: 500px;
+    height: 300px; 
+    margin: 1rem auto; /* Alinea al centro horizontalmente */
+}
+
+/* Cambiar el color de fondo del carrusel */
+.carousel {
+    background-color: #89c92c;
+}
+
+/* Footer */
+footer {
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Estilos responsivos para dispositivos móviles */
+@media (max-width: 768px) {
+    /* Redefinir estilos para encabezado y navegación en dispositivos móviles */
+    nav {
+        padding: 0.5rem 0;
+    }
+
+    nav li {
+        margin: 0 0.5rem;
+    }
+
+    /* Ajustar el tamaño de fuente en títulos para dispositivos móviles */
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Redefinir estilos para secciones en dispositivos móviles */
+    section {
+        padding: 1rem;
+    }
+}
