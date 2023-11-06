@@ -113,6 +113,9 @@ main {
     margin-right: 2px; /* Espacio a la derecha de la primera letra */
   line-height: 0; /* Controla el espaciado vertical */
   }
+.noticia-img{
+    width: 80% !important;
+}
 
 
 /* --Mision-- */
