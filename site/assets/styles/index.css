@@ -105,6 +105,14 @@ main {
     padding: 0 4rem 0;
     text-align: left !important;
 }
+.highlight {
+    display: inline-block;
+    font-size: 40px;
+    color: var(--grisoscuro);
+    font-weight: bold;
+    margin-right: 2px; /* Espacio a la derecha de la primera letra */
+  line-height: 0; /* Controla el espaciado vertical */
+  }
 
 
 /* --Mision-- */
