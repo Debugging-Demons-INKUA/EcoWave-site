@@ -84,6 +84,38 @@ main {
     background-color: white;
     min-height: 80vw;
 }
+/* ---------- Noticia-Princial ---------- */
+.noticiaContainer{
+    width: 100%;    
+    text-align: center;
+}
+.noticiaContainer .noticiaIndex h2{
+    padding: 1rem;
+    color: var(--verdeoscuro);
+    font-size: 2.2rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.noticiaContainer .noticiaIndex p{
+    color: var(--grisoscuro);
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;    
+    font-size: 1.2rem;
+    padding: 0 4rem 0;
+    text-align: left !important;
+}
+.highlight {
+    display: inline-block;
+    font-size: 40px;
+    color: var(--grisoscuro);
+    font-weight: bold;
+    margin-right: 2px; /* Espacio a la derecha de la primera letra */
+  line-height: 0; /* Controla el espaciado vertical */
+  }
+.noticia-img{
+    width: 80% !important;
+}
 
 
 /* --Mision-- */
@@ -93,8 +125,11 @@ main {
 }
 
 .misionContainer .misionIndex img{   
-    margin-top: 4rem;
     width: 12%;
+}
+.logo_sin_fondo{   
+    height: 18% !important;
+    width: 18% !important;
 }
 
 .misionContainer .misionIndex h2{ 
@@ -104,6 +139,7 @@ main {
     font-family: "Roboto", sans-serif;
     font-weight: 600;
     text-transform: uppercase;
+
 }
 
 .misionContainer .misionIndex p{
@@ -113,6 +149,16 @@ main {
     font-size: 1.2rem;
     padding: 0 4rem 0;
 }
+.misionContainer .misionIndex{
+    background-image:url(../images/fondo_animado.jpg);
+    background-size: cover ;
+    background-repeat: no-repeat ;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); 
+}
+hr {
+    height: 5px;
+    background: linear-gradient(45deg, #8ACB88 25%, transparent 25%, transparent 50%, #8ACB88 50%, #8ACB88 75%, transparent 75%, transparent);
+  }
 
 
 /* --Banner Slider-- */
