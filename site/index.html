@@ -6,20 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eco Wave | Inicio</title>
     <!-- Icon -->
+<<<<<<< HEAD
     <link rel="shortcut icon" href="./assets/images/icon02.jpg" type="image/x-icon">
     <!-- CSS -->
     <!"./assets/styles/index.css">
     <!-- Bootstrap -->
+=======
+    <link rel="shortcut icon" href="./assets/images/icon.ico" type="image/x-icon">
+    <!-- CSS con fuente Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link rel="stylesheet" href="./assets/styles/index.css">
+    <!-- Bootstrap CSS (Version 5.3.0-alpha3) -->
+>>>>>>> 2263ca109c572657b34ba5b428ce6f40bc1fc3a3
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
+
 
 <body>
     <header class="d-flex justify-content-center align-items-center">
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid justify-content-between">
-                <a class="navbar-brand" href="#"><img class="icono" src="./assets/images/icon01.jpg" alt="icono"></a>
+                <a class="navbar-brand" href="#"><img class="icono" src="./assets/images/logo02.jpg" alt="icono"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -46,97 +57,128 @@
             </div>
         </nav>
     </header>
+
+
     <main>
-        <!-- Imagen/Carrusel -->
-        <section class="iconContainer d-flex justify-content-center">
-            <img src="./assets/images/icon01.jpg" alt="icono">
+
+        <!-- Columna del texto de la misión -->        
+        <section class="misionContainer">   
+                <div class="misionIndex">
+                    <img src="/site/assets/images/logo.jpg" alt="logo ecowave">
+                    <h2>Nuestra Misión</h2>
+                    <p>
+                        Nuestra misión es liderar la lucha por la sostenibilidad ambiental.
+                        Nos dedicamos a la gestión de residuos, la recuperación de recursos
+                        y el reciclaje, al tiempo que fomentamos la conciencia ambiental
+                        y la educación. A través de nuestra plataforma, proporcionamos
+                        recursos y guías para reducir el desperdicio y reciclar de manera
+                        eficaz, además de ofrecer contenido educativo accesible que inspire
+                        a las personas a tomar medidas sostenibles en su vida diaria.
+                    </p>
+                </div>
         </section>
-        <!-- Mision -->
-        <section class="misionContainer d-flex justify-content-center">
-            <p class="misionText">Nuestra misión es liderar la lucha por la sostenibilidad ambiental.
-                Nos dedicamos a la gestión de residuos, la recuperación de recursos
-                y el reciclaje, al tiempo que fomentamos la conciencia ambiental
-                y la educación. A través de nuestra plataforma, proporcionamos
-                recursos y guías para reducir el desperdicio y reciclar de manera
-                eficaz, además de ofrecer contenido educativo accesible que inspire
-                a las personas a tomar medidas sostenibles en su vida diaria.</p>
-        </section>
-        <!-- Clasificacion de Residuos -->
-        <section class="clasificacionContainer d-flex flex-column justify-content-center align-items-center">
-            <h2 class="title01">¿Como se clasifican los residuos?</h2>
-            <div class="cardContainer d-flex flex-wrap justify-content-around">
-                <div class="card" style="width: 12rem;">
-                    <img src="./assets/images/ordinarios.jpg" class="card-img-top imagen-tarjeta"
-                        alt="residuo ordinario">
-                    <div class="card-body">
-                        <h5 class="card-title">Ordinarios</h5>
-                        <p class="card-text">Descripcion de este tipo de residuos.</p>
-                        <a href="#" class="cardLink">Mas Info</a>
+
+        <!--Seccion BANNER-->
+        <section class="bannerIndex">
+            <div class="swiper banner-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide bslide">
+                        <div class="banner-content">
+                            <h3>Reduce, reutiliza, recicla</h3>
+                            <span>Pequeños cambios, grandes impactos.</span><br>
+                            <button onclick="irASeccion()">¡Me interesa!</button>
+                            <script>
+                                function irASeccion() {
+                                    var destino = document.getElementById('categorias');
+                                    destino.scrollIntoView({ behavior: 'smooth' });
+                                }
+                            </script>
+                        </div>
+                        <div class="banner-image">
+                            <img src="/site/assets/images/banner-image1.png" alt="Cuidando el mundo">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide bslide">
+                        <div class="banner-content">
+                            <h3>Recicla y transforma el mundo</h3>
+                            <span>Cada reciclaje cuenta en la construcción de un futuro sostenible.</span><br>                            
+                            <button onclick="irASeccion()">¡Me interesa!</button>
+                            <script>
+                                function irASeccion() {
+                                    var destino = document.getElementById('categorias');
+                                    destino.scrollIntoView({ behavior: 'smooth' });
+                                }
+                            </script>                           
+                        </div>
+                        <div class="banner-image">
+                            <img src="/site/assets/images/banner-image3.png" alt="Cuidando el mundo">
+                        </div> 
+                    </div>
+
+                    <div class="swiper-slide bslide">
+                        <div class="banner-content">
+                            <h3>Haz eco con tu reciclaje</h3>
+                            <span>Tus acciones diarias marcan la pauta para un mañana sostenible.</span><br>
+                            <button onclick="irASeccion()">¡Me interesa!</button>
+                            <script>
+                                function irASeccion() {
+                                    var destino = document.getElementById('categorias');
+                                    destino.scrollIntoView({ behavior: 'smooth' });
+                                }
+                            </script>
+                        </div>
+                        <div class="banner-image">
+                            <img src="/site/assets/images/banner-image2.png" alt="Cuidando el mundo">
+                        </div>
                     </div>
                 </div>
-                <div class="card" style="width: 12rem;">
-                    <img src="./assets/images/organicosNo.jpg" class="card-img-top imagen-tarjeta"
-                        alt="residuo organico no aprovechable">
-                    <div class="card-body">
-                        <h5 class="card-title">Organicos No Aprovechables</h5>
-                        <p class="card-text">Descripcion de este tipo de residuos.</p>
-                        <a href="#" class="cardLink">Mas Info</a>
-                    </div>
-                </div>
-                <div class="card" style="width: 12rem;">
-                    <img src="./assets/images/organicosComp.jpg" class="card-img-top imagen-tarjeta"
-                        alt="residuo organico compostable">
-                    <div class="card-body">
-                        <h5 class="card-title">Organicos Compostables</h5>
-                        <p class="card-text">Descripcion de este tipo de residuos.</p>
-                        <a href="#" class="cardLink">Mas Info</a>
-                    </div>
-                </div>
-                <div class="card" style="width: 12rem;">
-                    <img src="./assets/images/papel.jpg" class="card-img-top imagen-tarjeta"
-                        alt="residuo papel y cartonm">
-                    <div class="card-body">
-                        <h5 class="card-title">Papel y Carton</h5>
-                        <p class="card-text">Descripcion de este tipo de residuos.</p>
-                        <a href="#" class="cardLink">Mas Info</a>
-                    </div>
-                </div>
-                <div class="card" style="width: 12rem;">
-                    <img src="./assets/images/plasticos.jpg" class="card-img-top imagen-tarjeta"
-                        alt="residuos plasticos">
-                    <div class="card-body">
-                        <h5 class="card-title">Plasticos</h5>
-                        <p class="card-text">Descripcion de este tipo de residuos.</p>
-                        <a href="#" class="cardLink">Mas Info</a>
-                    </div>
-                </div>
-                <div class="card" style="width: 12rem;">
-                    <img src="./assets/images/vidrio.jpg" class="card-img-top imagen-tarjeta" alt="residuo vidrio">
-                    <div class="card-body">
-                        <h5 class="card-title">Vidrio</h5>
-                        <p class="card-text">Descripcion de este tipo de residuos.</p>
-                        <a href="#" class="cardLink">Mas Info</a>
-                    </div>
-                </div>
-                <div class="card" style="width: 12rem;">
-                    <img src="./assets/images/metales.jpg" class="card-img-top imagen-tarjeta" alt="residuo metalico">
-                    <div class="card-body">
-                        <h5 class="card-title">Metales</h5>
-                        <p class="card-text">Descripcion de este tipo de residuos.</p>
-                        <a href="#" class="cardLink">Mas Info</a>
-                    </div>
-                </div>
-                <div class="card" style="width: 12rem;">
-                    <img src="./assets/images/peligrosos.jpg" class="card-img-top imagen-tarjeta"
-                        alt="residuo peligroso">
-                    <div class="card-body">
-                        <h5 class="card-title">Peligrosos</h5>
-                        <p class="card-text">Descripcion de este tipo de residuos.</p>
-                        <a href="#" class="cardLink">Mas Info</a>
-                    </div>
-                </div>
+                <div class="swiper-pagination"></div>
             </div>
         </section>
+                    
+        <!--Seccion CLASIFICACION de Residuos inicio -->
+        <section class="categoria-container" id="categorias"> 
+                    
+            <h2 class="index-categoria-title">¿Como se clasifican los residuos?</h2>
+
+            <div class="index-categoria">                
+                <a href="#" class="index-categoria-box">
+                    <h3>Ordinarios</h3>
+                </a>
+                                
+                <a href="#" class="index-categoria-box">
+                    <h3>Orgánicos <br> NO <br>aprovechables</h3>
+                </a>
+                                
+                <a href="#" class="index-categoria-box">
+                    <h3>Orgánicos Compostables</h3>
+                </a>
+                                
+                <a href="#" class="index-categoria-box">
+                    <h3>Papel y Cartón</h3>
+                </a>
+                                
+                <a href="#" class="index-categoria-box">
+                    <h3>Plásticos</h3>
+                </a>
+                                
+                <a href="#" class="index-categoria-box">
+                    <h3>Vidrios</h3>
+                </a>
+                                
+                <a href="#" class="index-categoria-box">
+                    <h3>Metales</h3>
+                </a>
+                                
+                <a href="#" class="index-categoria-box">
+                    <h3>Peligrosos</h3>
+                </a>  
+            </div>
+        </section>
+</main>
+        <!-- Clasificacion de Residuos fin -->
+
         <!-- Noticias -->
         <section class="noticiasSection d-flex align-items-center flex-column">
             <h2 class="title02">Ultimas Noticias</h2>
@@ -177,7 +219,24 @@
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
-</body>
+        crossorigin="anonymous"></script>       
 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>         
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
+    
+    
+    <script>
+        var swiper = new Swiper(".banner-slider", {
+            loop: true,
+            grabCursor: true,
+            effect: "flip",
+            pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            },
+        });
+    </script>
+</body>
 </html>
