@@ -84,6 +84,13 @@ main {
     background-color: white;
     min-height: 80vw;
 }
+/* ---------- Noticia-Princial ---------- */
+.noticiaContainer{
+    width: 100%;    
+    text-align: center;
+}
+
+
 
 /* --Mision-- */
 .misionContainer { 
