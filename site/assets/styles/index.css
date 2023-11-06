@@ -117,6 +117,12 @@ main {
 
 /* --Banner Slider-- */
 
+.bannerIndex{
+    height: 400px;
+    width: 95%;
+    margin-left: 30px;
+}
+
 .bannerIndex .bslide {
     border-radius: 20px;
     height: 350px;
@@ -129,7 +135,7 @@ main {
 }
 
 .bannerIndex .bslide .banner-image {
-    flex: 1 1 35rem;
+    flex: 1 1 25rem;
 }
 
 .bannerIndex .bslide .banner-image img {
@@ -138,7 +144,7 @@ main {
 
 .bannerIndex .bslide .banner-content {
     padding-left: 8rem;
-    flex: 1 1 40rem;
+    flex: 1 1 30rem;
     text-align: center;
 }
 
