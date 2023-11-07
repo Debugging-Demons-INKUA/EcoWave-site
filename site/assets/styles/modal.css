@@ -58,3 +58,16 @@
     margin-bottom: 10px;
    
 }
+
+
+@media (max-width: 800px){
+    .modal__container{
+        padding: 2em 1.5em;
+    }
+
+    .modal__title {
+        font-size: 2rem;
+    }
+
+    
+}
