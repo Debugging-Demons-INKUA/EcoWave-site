@@ -156,8 +156,36 @@ a:hover{
 a{
     color:black !important;
 }
-
-
-
-
+/* ---------- Noticia-Princial ---------- */
+.noticiaContainer{
+  width: 100%;    
+  text-align: center;
+}
+.noticiaContainer .noticiaIndex h2{
+  padding: 1rem;
+  color: var(--verdeoscuro);
+  font-size: 2.2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.noticiaContainer .noticiaIndex p{
+  color: var(--grisoscuro);
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;    
+  font-size: 1.2rem;
+  padding: 0 4rem 0;
+  text-align: left !important;
+}
+.highlight {
+  display: inline-block;
+  font-size: 40px;
+  color: var(--grisoscuro);
+  font-weight: bold;
+  margin-right: 2px; /* Espacio a la derecha de la primera letra */
+line-height: 0; /* Controla el espaciado vertical */
+}
+.noticia-img{
+  width: 80% !important;
+}
 
