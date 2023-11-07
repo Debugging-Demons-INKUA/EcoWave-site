@@ -26,3 +26,35 @@
     --transform: translateY(0) ;
     --transition: transform .8s .8s;
 }
+
+
+.modal__container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    overflow: auto;
+   
+    width: 90%;
+    max-width: 2000px;
+    height: 2000px;
+  max-height: 90%;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 3em 2.5em;
+    /* display: grid; */
+    /* gap: 1em; */
+    place-items: center;
+    grid-auto-columns: 100%;
+    transform: var(--transform);
+    transition: var(--transition);
+}
+
+.modal__title {
+    font-size: 2.5rem;
+}
+
+.modal__paragraph {
+    
+    margin-bottom: 10px;
+   
+}
