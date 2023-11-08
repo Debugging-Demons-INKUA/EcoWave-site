@@ -55,7 +55,8 @@ p{
 #plastico, 
 #vidrio, 
 #metales, 
-#compostales {
+#compostales,
+#peligrosos {
     padding: 1rem;
     text-align: center;
 }
@@ -65,14 +66,12 @@ p{
 #plastico p, 
 #vidrio p, 
 #metales p, 
-#compostales p{
+#compostales p,
+#peligrosos p{
     column-count: 2;
     column-gap: 50px; /* Espacio entre columnas */
     text-align: justify;
 }
-
-
-
 
 .video-container {
     display: flex;
@@ -85,7 +84,6 @@ iframe {
     max-width: 360px; /* Establece un ancho máximo para controlar el tamaño máximo */
     margin: 0.3rem;
 }
-
 
 /* Footer */
 footer {
