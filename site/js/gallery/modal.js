@@ -10,6 +10,10 @@ const openVidrios= document.querySelector('.vidrios');
 const vidrios = document.querySelector('#vidrios');
 const closeVidrios = document.querySelector('#close_vidrios');
 
+const openPapelCarton= document.querySelector('.papelCarton');
+const papelCarton = document.querySelector('#papelCarton');
+const closePapelCarton = document.querySelector('#close_papelCarton');
+
 
 openMetales.addEventListener('click', (e) => {
     e.preventDefault();
@@ -24,6 +28,12 @@ openPeligrosos.addEventListener('click', (e) => {
 openVidrios.addEventListener('click', (e) => {
     e.preventDefault();
     vidrios.classList.add('modales--show')
+})
+
+
+openPapelCarton.addEventListener('click', (e) => {
+    e.preventDefault();
+    papelCarton.classList.add('modales--show')
 })
 
 closeMetales.addEventListener('click', (e) => {
@@ -42,4 +52,10 @@ closeVidrios.addEventListener('click', (e) => {
     e.preventDefault();
     
     vidrios.classList.remove('modales--show')
+})
+
+closePapelCarton.addEventListener('click', (e) => {
+    e.preventDefault();
+    
+    papelCarton.classList.remove('modales--show')
 })
