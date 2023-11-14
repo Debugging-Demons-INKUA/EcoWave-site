@@ -1,14 +1,30 @@
-const openModal = document.querySelector('.hero__cta');
-const modal = document.querySelector('.modales');
+const openMetales= document.querySelector('.metales');
+const metales = document.querySelector('#metales');
+const closeMetales = document.querySelector('#close_metales');
 
-const closeModal = document.querySelector('.modal__close');
+const openPeligrosos= document.querySelector('.peligrosos');
+const peligrosos = document.querySelector('#peligrosos');
+const closePeligrosos= document.querySelector('#close_peligrosos');
 
-openModal.addEventListener('click', (e) => {
+
+openMetales.addEventListener('click', (e) => {
     e.preventDefault();
-    modal.classList.add('modales--show')
+    metales.classList.add('modales--show')
 })
 
-closeModal.addEventListener('click', (e) => {
+openPeligrosos.addEventListener('click', (e) => {
     e.preventDefault();
-    modal.classList.remove('modales--show')
+    peligrosos.classList.add('modales--show')
+})
+
+closeMetales.addEventListener('click', (e) => {
+    e.preventDefault();
+    metales.classList.remove('modales--show')
+    
+})
+
+closePeligrosos.addEventListener('click', (e) => {
+    e.preventDefault();
+    
+    peligrosos.classList.remove('modales--show')
 })
