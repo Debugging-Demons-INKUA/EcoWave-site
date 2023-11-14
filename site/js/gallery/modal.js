@@ -14,6 +14,10 @@ const openPapelCarton= document.querySelector('.papelCarton');
 const papelCarton = document.querySelector('#papelCarton');
 const closePapelCarton = document.querySelector('#close_papelCarton');
 
+const openOrganicos= document.querySelector('.organicos');
+const organicos = document.querySelector('#organicos');
+const closeOrganicos= document.querySelector('#close_organicos');
+
 
 openMetales.addEventListener('click', (e) => {
     e.preventDefault();
@@ -34,6 +38,11 @@ openVidrios.addEventListener('click', (e) => {
 openPapelCarton.addEventListener('click', (e) => {
     e.preventDefault();
     papelCarton.classList.add('modales--show')
+})
+
+openOrganicos.addEventListener('click', (e) => {
+    e.preventDefault();
+    organicos.classList.add('modales--show')
 })
 
 closeMetales.addEventListener('click', (e) => {
@@ -58,4 +67,10 @@ closePapelCarton.addEventListener('click', (e) => {
     e.preventDefault();
     
     papelCarton.classList.remove('modales--show')
+})
+
+closeOrganicos.addEventListener('click', (e) => {
+    e.preventDefault();
+    
+    organicos.classList.remove('modales--show')
 })
