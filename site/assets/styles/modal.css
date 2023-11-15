@@ -73,6 +73,7 @@
     display: inline-block;
     font-weight: 300;
     transition: background-color .3s;
+    
 }
 
 .modal__close:hover {
