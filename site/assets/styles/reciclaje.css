@@ -196,11 +196,7 @@ figure.effect-oscar:hover .metales {
 	background-color: rgba(175,159, 157,0.8);
 }
 
-figure.effect-oscar:hover .compostables {
-	background-color: rgba(0,175, 145,0.8);
-}
-
-figure.effect-oscar:hover .compostables {
+figure.effect-oscar:hover .organicos {
 	background-color: rgba(0,175, 145,0.8);
 }
 
@@ -208,9 +204,19 @@ figure.effect-oscar:hover .residuosOrd {
 	background-color: rgba(240, 245, 244, 0.8);
 }
 
+figure.effect-oscar:hover .no-reciclables {
+    background-color: rgba(9, 10, 10, 0.8);
+}
+
+figure.effect-oscar:hover .consejos{
+    background-color: rgba(248, 112, 0, 0.8)
+}
+
 figure.effect-oscar:hover figcaption {
 	background-color: rgba(175,159, 157,0.8);
 }
+
+
 
 figure.effect-oscar:hover img {
 	opacity: 0.4;
