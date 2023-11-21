@@ -20,8 +20,8 @@ Nuestra misión es proporcionar recursos y guías para reducir el desperdicio y 
 1. Clona este repositorio:
 
 ```bash
-git clone https://github.com/tu-usuario/inkua-proyecto.git
-cd inkua-proyecto
+git clone [https://github.com/tu-usuario/inkua-proyecto.git](https://github.com/Debugging-Demons-INKUA/EcoWave-site.git)
+cd ecowave/site
 ```
 1. Abre index.html en tu navegador.
 
