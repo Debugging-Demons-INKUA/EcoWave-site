@@ -12,13 +12,71 @@
 html,
 body {
   -moz-box-sizing: border-box;
-       box-sizing: border-box;
+  box-sizing: border-box;
   height: 100%;
   width: 100%; 
   background: #FFF;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   background-color: var(--grisclaro) !important;
+}
+
+/* ---------- HEADER ---------- */
+header {
+  min-height: 15vh;
+}
+
+#header-nav {
+  background-color: white !important;
+  min-height: 14vh;
+  z-index: 1;
+}
+
+.navbar {
+  background-color: white !important;
+  height: 15vh;
+  width: 100%;
+  position: fixed !important;
+  z-index: 1000;
+}
+
+#navbarNav {
+  justify-content: end;
+  align-items: center;
+  font-size: larger;
+}
+
+.container-fluid {
+  background-color: white;
+}
+
+.navbar-nav {
+  background-color: white;
+  font-size: 120%;
+  gap: 1rem;
+  align-items: center !important;
+  padding: 1rem;
+  margin-bottom: .5rem;
+}
+
+.nav-item {
+  padding-right: .5rem;
+}
+
+.nav-link {
+  font-weight: bold !important;
+}
+
+.nav-link:hover {
+  text-decoration: underline rgb(74, 121, 2);
+}
+
+.active {
+  color: rgb(74, 121, 2) !important;
+}
+
+.icono {
+  width: 8rem;
 }
 
 .wrapper {
@@ -52,6 +110,22 @@ body {
     margin: 0 0 0.5em;
     color: #505050;
   }
+
+  /* ---------- FOOTER ---------- */
+footer {
+  margin-top: 2rem;
+  min-height: 5rem;
+  background-color: black !important;
+}
+
+.footerContainer {
+  padding-top: 1rem;
+}
+
+.footerText a {
+  color: white !important;
+  text-decoration: none;
+}
 
   @media (min-width: 450px) {
     h1.heading {
@@ -156,8 +230,3 @@ a:hover{
 a{
     color:black !important;
 }
-
-
-
-
-

@@ -5,6 +5,16 @@
     padding: 0;
 }
 
+:root {
+    --grisclaro: #ECECEC;
+    --grisoscuro: #333333;
+    --azulclaro: #3498DB;
+    --azuloscuro: #2980B9;
+    --amarillosuave: #FFD700;
+    --verdeclaro: #00A896;
+    --verdeoscuro: #00665E;
+}
+
 /* ---------- HEADER ---------- */
 header {
     min-height: 15vh;
@@ -27,6 +37,7 @@ header {
     height: 15vh;
     width: 100%;
     position: fixed !important;
+    z-index: 1000;
 }
 
 #navbarNav {
@@ -74,45 +85,181 @@ main {
     min-height: 80vw;
 }
 
-/* Imagen */
-.iconContainer {
-    width: 100%;
-    padding-top: 3rem;
+
+/* --Mision-- */
+.misionContainer { 
+    width: 100%;    
+    text-align: center;
 }
 
-/* Mision */
-.misionContainer {
-    width: 100%;
+.misionContainer .misionIndex img{   
+    margin-top: 4rem;
+    width: 12%;
 }
 
-.misionText {
-    color: rgb(74, 121, 2);
+.misionContainer .misionIndex h2{ 
+    padding: 1rem;
+    color: var(--verdeoscuro);
+    font-size: 2.2rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.misionContainer .misionIndex p{
+    color: var(--grisoscuro);
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;    
+    font-size: 1.2rem;
+    padding: 0 4rem 0;
+}
+
+
+/* --Banner Slider-- */
+
+.bannerIndex{
+    height: 400px;
+    width: 95%;
+    margin-left: 30px;
+}
+
+.bannerIndex .bslide {
+    border-radius: 20px;
+    height: 350px;
+    margin-top: 2.5rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    box-shadow: 0px 0px 4px 2px rgba(1, 46, 10, 0.2);
+}
+
+.bannerIndex .bslide .banner-image {
+    flex: 1 1 25rem;
+}
+
+.bannerIndex .bslide .banner-image img {
+    width: 75%;
+}
+
+.bannerIndex .bslide .banner-content {
+    padding-left: 8rem;
+    flex: 1 1 30rem;
+    text-align: center;
+}
+
+.bannerIndex .bslide .banner-content h3{
+    font-size: 2.5rem;
+    color: var(--verdeclaro);
+    font-family: "Roboto", sans-serif;
+}
+
+.bannerIndex .bslide .banner-content span{
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    color: var(--grisoscuro);
+    text-transform: lowercase;    
+    font-family: "Roboto", sans-serif;
+}
+
+.bannerIndex .bslide .banner-content button{
+    border: none;
+    border-radius: 10px;
+    background-color: var(--verdeoscuro);
+    padding: 10px 15px;
+    margin-top: 40px;   
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;    
+    font-size: 1.1rem;
+    color: var(--grisclaro);
+    box-shadow: inset 0 0 0 0 #FFD700;
+    transition: ease-out 0.4s;
+    outline: none;
+}
+
+.bannerIndex .bslide .banner-content button:hover{
+    box-shadow: inset 150px 0 0 0 #FFD700;
+    cursor: pointer;
+    color: var(--grisoscuro);
+}
+
+
+/* --Clasificacion de Residuos-- */
+
+.categoria-container .index-categoria-title{
+    text-align: center;
+    margin-bottom: 2.5rem;
+    margin-top: 2.5rem;
+    padding: 3rem 0 0;
+    color: var(--verdeoscuro);
+    font-size: 2.2rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.categoria-container .index-categoria{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1.5rem;
+    align-items: flex-start;
+    margin: 0 auto;
+    max-width: 1200px;
     padding: 2rem;
-    width: 80%;
 }
 
-/* Clasificacion de Residuos */
-.title01 {
-    color: rgb(152, 58, 11);
-}
-
-.card {
-    margin-bottom: 1rem;
-}
-
-.card-title {
-    height: 3rem;
-}
-
-.cardLink {
-    color: rgb(18, 157, 157);
+.categoria-container .index-categoria .index-categoria-box{
+    background-color: #00665E;
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    text-align: center;
     text-decoration: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.cardLink:hover {
-    color: rgb(74, 121, 2);
-    text-decoration: underline;
+.categoria-container .index-categoria .index-categoria-box h3{   
+    font-size: 2rem;
+    color: var(--grisclaro);
+    width: 100%;
+    padding-top: 5px; 
+    padding-bottom: 8px;
+    background-color: rgba(131,145,146,.9);
 }
+
+.categoria-container .index-categoria .index-categoria-box h3:hover{
+    color: var(--amarillosuave);
+}
+
+.categoria-container .index-categoria .index-categoria-box:nth-child(1){
+    background-image: url(https://earth911.com/wp-content/uploads/2016/06/mixed-waste-mix.jpg);
+}
+.categoria-container .index-categoria .index-categoria-box:nth-child(2){
+    background-image: url(https://img.freepik.com/foto-gratis/pizza-vietnamita_1339-2782.jpg?size=626&ext=jpg);
+}
+.categoria-container .index-categoria .index-categoria-box:nth-child(3){
+    background-image: url(https://img.freepik.com/foto-gratis/variedad-frutas-verduras-saludables-monton-colorido-generado-ia_24640-93381.jpg?size=626&ext=jpg);
+}
+.categoria-container .index-categoria .index-categoria-box:nth-child(4){
+    background-image: url(https://img.freepik.com/foto-gratis/disposicion-diferentes-objetos-desechados_23-2148996918.jpg?size=626&ext=jpg);
+}
+.categoria-container .index-categoria .index-categoria-box:nth-child(5){
+    background-image: url(https://i.guim.co.uk/img/media/5f9b5ec6bac9e97acc437ec7e3e965f6a0c119cd/0_129_6720_4032/master/6720.jpg?width=620&dpr=2&s=none);
+}
+.categoria-container .index-categoria .index-categoria-box:nth-child(6){
+    background-image: url(https://media.hswstatic.com/eyJidWNrZXQiOiJjb250ZW50Lmhzd3N0YXRpYy5jb20iLCJrZXkiOiJnaWZcL2dsYXNzLXJlY3ljbGluZy5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOiIxMjAwIn19fQ==);
+}
+.categoria-container .index-categoria .index-categoria-box:nth-child(7){
+    background-image: url(https://everydayrecycler.com/wp-content/uploads/2020/07/Depositphotos_40012335_xl-2015_optimized.jpg);
+}
+.categoria-container .index-categoria .index-categoria-box:nth-child(8){
+    background-image: url(https://www.netregs.org.uk/media/1496/batteries-362759357.jpg?width=800&height=533.2);
+}
+
 
 /* Noticias */
 .title02 {
@@ -144,6 +291,7 @@ footer {
     padding-top: 1rem;
 }
 
-.footerText {
+.footerText a {
     color: white;
+    text-decoration: none;
 }

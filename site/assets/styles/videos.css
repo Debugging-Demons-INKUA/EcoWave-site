@@ -1,45 +1,102 @@
+/* Estilo Normalizado */
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --grisclaro: #ECECEC;
+    --grisoscuro: #333333;
+    --azulclaro: #3498DB;
+    --azuloscuro: #2980B9;
+    --amarillosuave: #FFD700;
+    --verdeclaro: #00A896;
+    --verdeoscuro: #00665E;
+}
+
 /* Estilos generales */
+html,
 body {
-    font-family: 'Roboto', 'Lato', sans-serif;
-    background-color: #ECECEC;
-    padding: 0;
-    margin: 0;
-    line-height: 1.6;
-    color: #333333;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%; 
+  background: #FFF;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  background-color: var(--grisclaro) !important;
 }
 
-a {
-    color: #333333;
-    text-decoration: none;
+/* ---------- HEADER ---------- */
+header {
+    min-height: 15vh;
 }
 
-a:hover {
-    color: #2980B9;
+#header-nav {
+    background-color: white !important;
+    min-height: 14vh;
+    z-index: 1;
 }
 
-/* Encabezado y navegación */
-nav {
-    background-color: #00A896;
-    color: #333333;
-    text-align: center;
-    padding: 1rem 0;
-    margin: 0;
+/* nav {
+    position: sticky !important;
+    top: 0px !important;
+} */
+
+.navbar {
+    background-color: white !important;
+    height: 15vh;
+    width: 100%;
+    position: fixed !important;
+    z-index: 1000;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
+#navbarNav {
+    justify-content: end;
+    align-items: center;
+    font-size: larger;
 }
 
-nav li {
-    display: inline;
-    margin: 0 1rem;
+.container-fluid {
+    background-color: white;
+}
+
+.navbar-nav {
+    background-color: white;
+    font-size: 80%;
+    gap: 1rem;
+    align-items: center !important;
+    padding: 1rem;
+    margin-bottom: .5rem;
+}
+
+.nav-item {
+    padding-right: .5rem;
+}
+
+.nav-link {
+    font-weight: bold !important;
+}
+
+.nav-link:hover {
+    text-decoration: underline rgb(74, 121, 2);
+}
+
+.active {
+    color: rgb(74, 121, 2) !important;
+}
+
+.icono {
+    width: 8rem;
 }
 
 /* Títulos */
 h2 {
-    font-family: 'Consolas', monospace;
-    color: #00665E;
+    font-family:  'Roboto', 'Lato', sans-serif;
+    color: #00665E !important;
     text-align: center; /* Centrar títulos */
     margin-bottom: 2rem; /* Espacio entre títulos y contenido */
 }
@@ -59,6 +116,7 @@ p{
 #peligrosos {
     padding: 1rem;
     text-align: center;
+    padding-top: 120px;
 }
 
 #papel p, 
@@ -85,14 +143,21 @@ iframe {
     margin: 0.3rem;
 }
 
-/* Footer */
+/* ---------- FOOTER ---------- */
 footer {
-    background-color: #333333;
-    color: white;
-    text-align: center;
-    padding: 1rem 0;
+    margin-top: 2rem;
+    min-height: 5rem;
+    background-color: black;
 }
 
+.footerContainer {
+    padding-top: 1rem;
+}
+
+.footerText a {
+    color: white;
+    text-decoration: none;
+}
 
 /* Estilos responsivos para dispositivos móviles */
 @media (max-width: 768px) {
@@ -110,4 +175,40 @@ footer {
         column-count: 1;
         text-align: justify;
     }
+
+    nav ul {
+        display: none; /* Ocultar la lista en pantallas más pequeñas por defecto */
+        text-align: center;
+        width: 100%;
+    }
+
+    nav li {
+        display: block; /* Hacer que los elementos de la lista se muestren como bloques apilados */
+        margin: 5px 0;
+    }
+
+    /* Estilos para el ícono o botón de menú en pantallas más pequeñas */
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        color: #333333;
+        font-size: 10px;
+        padding: 5px;
+    }
+
+    /* Ocultar la lista de navegación en pantallas más pequeñas */
+    nav ul {
+        display: none;
+    }
+    
+    /* Mostrar el ícono de hamburguesa en pantallas más pequeñas */
+    .menu-icon {
+        display: block;
+    }
+    
+    /* Ocultar el ícono de hamburguesa en pantallas más grandes */
+    .menu-icon-large {
+        display: none;
+    }
 }
+    
