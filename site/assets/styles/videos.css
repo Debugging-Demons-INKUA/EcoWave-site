@@ -1,0 +1,113 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', 'Lato', sans-serif;
+    background-color: #ECECEC;
+    padding: 0;
+    margin: 0;
+    line-height: 1.6;
+    color: #333333;
+}
+
+a {
+    color: #333333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #2980B9;
+}
+
+/* Encabezado y navegación */
+nav {
+    background-color: #00A896;
+    color: #333333;
+    text-align: center;
+    padding: 1rem 0;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+/* Títulos */
+h2 {
+    font-family: 'Consolas', monospace;
+    color: #00665E;
+    text-align: center; /* Centrar títulos */
+    margin-bottom: 2rem; /* Espacio entre títulos y contenido */
+}
+
+/* Textos */
+p{
+    text-align: center;
+}
+
+/* Section */
+#papel, 
+#carton, 
+#plastico, 
+#vidrio, 
+#metales, 
+#compostales,
+#peligrosos {
+    padding: 1rem;
+    text-align: center;
+}
+
+#papel p, 
+#carton p, 
+#plastico p, 
+#vidrio p, 
+#metales p, 
+#compostales p,
+#peligrosos p{
+    column-count: 2;
+    column-gap: 50px; /* Espacio entre columnas */
+    text-align: justify;
+}
+
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+iframe {
+    width: 100%; /* Cambia el ancho al 100% para que se ajuste a dispositivos móviles */
+    max-width: 360px; /* Establece un ancho máximo para controlar el tamaño máximo */
+    margin: 0.3rem;
+}
+
+/* Footer */
+footer {
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+
+/* Estilos responsivos para dispositivos móviles */
+@media (max-width: 768px) {
+    iframe {
+        width: 100%; /* Cambia el ancho al 100% para dispositivos móviles */
+        max-width: none; /* Elimina el ancho máximo en dispositivos móviles */
+    }
+
+    #papel p, 
+    #carton p, 
+    #plastico p, 
+    #vidrio p, 
+    #metales p, 
+    #compostales p{
+        column-count: 1;
+        text-align: justify;
+    }
+}
