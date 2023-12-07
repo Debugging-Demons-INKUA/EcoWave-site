@@ -1,3 +1,4 @@
+
 /* Estilo Normalizado */
 * {
     box-sizing: border-box;
@@ -121,6 +122,70 @@ main {
     height: 400px;
     width: 95%;
     margin-left: 30px;
+
+}
+
+.bannerIndex .bslide {
+    border-radius: 20px;
+    height: 350px;
+    margin-top: 2.5rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    box-shadow: 0px 0px 4px 2px rgba(1, 46, 10, 0.2);
+}
+
+.bannerIndex .bslide .banner-image {
+    flex: 1 1 25rem;
+}
+
+.bannerIndex .bslide .banner-image img {
+    width: 75%;
+}
+
+.bannerIndex .bslide .banner-content {
+    padding-left: 8rem;
+    flex: 1 1 30rem;
+    text-align: center;
+}
+
+.bannerIndex .bslide .banner-content h3{
+    font-size: 2.5rem;
+    color: var(--verdeclaro);
+    font-family: "Roboto", sans-serif;
+}
+
+.bannerIndex .bslide .banner-content span{
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    color: var(--grisoscuro);
+    text-transform: lowercase;    
+    font-family: "Roboto", sans-serif;
+}
+
+.bannerIndex .bslide .banner-content button{
+    border: none;
+    border-radius: 10px;
+    background-color: var(--verdeoscuro);
+    padding: 10px 15px;
+    margin-top: 40px;   
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;    
+    font-size: 1.1rem;
+    color: var(--grisclaro);
+    box-shadow: inset 0 0 0 0 #FFD700;
+    transition: ease-out 0.4s;
+    outline: none;
+}
+
+.bannerIndex .bslide .banner-content button:hover{
+    box-shadow: inset 150px 0 0 0 #FFD700;
+    cursor: pointer;
+    color: var(--grisoscuro);
+}
+
+=======
 }
 
 .bannerIndex .bslide {
@@ -259,6 +324,7 @@ main {
 .categoria-container .index-categoria .index-categoria-box:nth-child(8){
     background-image: url(https://www.netregs.org.uk/media/1496/batteries-362759357.jpg?width=800&height=533.2);
 }
+
 
 
 /* Noticias */
