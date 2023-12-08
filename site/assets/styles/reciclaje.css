@@ -261,10 +261,10 @@ p {
 /***** Oscar *****/
 /*---------------*/
 
-figure.effect-oscar {
-    /* 	background: -webkit-linear-gradient(45deg, #22682a 0%, #9b4a1b 40%, #3a342a 100%);
-	background: linear-gradient(45deg, #22682a 0%,#9b4a1b 40%,#3a342a 100%); */
-}
+/* figure.effect-oscar {
+    background: -webkit-linear-gradient(45deg, #22682a 0%, #9b4a1b 40%, #3a342a 100%);
+    background: linear-gradient(45deg, #22682a 0%, #9b4a1b 40%, #3a342a 100%);
+} */
 
 /* figure.effect-oscar img {
 	opacity: 0.9;
@@ -394,7 +394,7 @@ figure.effect-oscar:hover img {
     right: 0;
     bottom: 0;
     left: 0;
-    -moz-backface-visibility: hidden
+    -moz-backface-visibility: hidden;
 }
 
 .blueimp-gallery>.slides>.slide>.slide-content {
