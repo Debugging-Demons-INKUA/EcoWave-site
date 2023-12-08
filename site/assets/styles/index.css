@@ -384,6 +384,8 @@ main {
     box-shadow: inset 0 0 0 0 #FFD700;
     transition: ease-out 0.4s;
     outline: none;
+    margin-bottom: 30px;
+    margin-top: 20px;
 }
 
 .noticiasBtn:hover {
@@ -420,7 +422,7 @@ main {
 }
 
 /* ---------- FOOTER ---------- */
-footer {
+/* footer {
     margin-top: 2rem;
     min-height: 5rem;
     background-color: black;
@@ -433,4 +435,64 @@ footer {
 .footerText a {
     color: white;
     text-decoration: none;
+} */
+
+footer{
+    position: relative;
+    width: 100%;
+    background: #333333;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .footer_logos, footer .footer_menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+.footer_logos li, .footer_menu li{
+    list-style: none;
+}
+
+.footer_logos li img{
+    margin: 0 20px;
+    width: 45px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.footer_logos li img:hover{
+    transform: translateY(-10px);
+}
+
+.footer_menu li a{
+    font-size: 1rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.footer_menu li a:hover{
+    color:#00A896;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.olas{
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: red url(/assets/images/wave2.gif) center;
+    background-size: 1400px 100px;
 }
