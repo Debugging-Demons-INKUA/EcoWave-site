@@ -45,7 +45,7 @@
                             <a class="nav-link" href="./videos.html">Videos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">¿Quienes Somos?</a>
+                            <a class="nav-link" href="./about.html">¿Quienes Somos?</a>
                         </li>
                     </ul>
                 </div>
@@ -80,8 +80,8 @@
                     <div class="swiper-slide bslide">
                         <div class="banner-content">
                             <h3>Reduce, reutiliza, recicla</h3>
-                            <span>Pequeños cambios, grandes impactos.</span><br>
-                            <button onclick="irASeccion()">¡Me interesa!</button>
+                            <span class="sliderSpan">Pequeños cambios, grandes impactos.</span><br>
+                            <button class="sliderBtn" onclick="irASeccion()">¡Me interesa!</button>
                             <script>
                                 function irASeccion() {
                                     var destino = document.getElementById('categorias');
@@ -97,8 +97,9 @@
                     <div class="swiper-slide bslide">
                         <div class="banner-content">
                             <h3>Recicla y transforma el mundo</h3>
-                            <span>Cada reciclaje cuenta en la construcción de un futuro sostenible.</span><br>
-                            <button onclick="irASeccion()">¡Me interesa!</button>
+                            <span class="sliderSpan">Cada reciclaje cuenta en la construcción de un futuro
+                                sostenible.</span><br>
+                            <button class="sliderBtn" onclick="irASeccion()">¡Me interesa!</button>
                             <script>
                                 function irASeccion() {
                                     var destino = document.getElementById('categorias');
@@ -114,8 +115,9 @@
                     <div class="swiper-slide bslide">
                         <div class="banner-content">
                             <h3>Haz eco con tu reciclaje</h3>
-                            <span>Tus acciones diarias marcan la pauta para un mañana sostenible.</span><br>
-                            <button onclick="irASeccion()">¡Me interesa!</button>
+                            <span class="sliderSpan">Tus acciones diarias marcan la pauta para un mañana
+                                sostenible.</span><br>
+                            <button class="sliderBtn" onclick="irASeccion()">¡Me interesa!</button>
                             <script>
                                 function irASeccion() {
                                     var destino = document.getElementById('categorias');
@@ -171,32 +173,32 @@
     <section class="noticiasSection d-flex align-items-center flex-column">
         <h2 class="title02">Ultimas Noticias</h2>
         <div class="noticiasContainer d-flex align-items-center justify-content-around">
-            <div class="card" style="width: 16rem;">
-                <img src="./assets/images/noticia-1.jpg" class="card-img-top" alt="...">
+            <div class="card">
+                <div class="card-img-1"></div>
                 <div class="card-body">
                     <p class="card-text">Un cordobés creó un auto que anda a agua y basura </p>
                     <a href="https://www.losandes.com.ar/sociedad/un-cordobes-creo-un-auto-que-anda-a-agua-y-basura-y-ofrece-gratis-los-planos/#:~:text=Sociedad%20%2F%20C%C3%B3rdoba-,Un%20cordob%C3%A9s%20cre%C3%B3%20un%20auto%20que%20anda%20a%20agua%20y,que%20su%20auto%20no%20contamina"
-                        class="cardLink">Continuar Leyendo</a>
+                        class="cardLink" target="_blank">Continuar Leyendo</a>
                 </div>
             </div>
-            <div class="card" style="width: 16rem;">
-                <img src="./assets/images/noticia-2.png" class="card-img-top" alt="...">
+            <div class="card">
+                <div class="card-img-2"></div>
                 <div class="card-body">
                     <p class="card-text">Dos pueblos reciben electricidad hecha con residuos</p>
                     <a href="https://www.lanacion.com.ar/economia/campo/agricultura/tienen-un-campo-de-1000-hectareas-y-abastecen-de-energia-a-dos-pueblos-gracias-a-una-innovacion-nid17052022/"
-                        class="cardLink">Continuar Leyendo</a>
+                        class="cardLink" target="_blank">Continuar Leyendo</a>
                 </div>
             </div>
-            <div class="card" style="width: 16rem;">
-                <img src="./assets/images/noticia-3.png" class="card-img-top" alt="...">
+            <div class="card">
+                <div class="card-img-3"></div>
                 <div class="card-body">
                     <p class="card-text">Bloques fabricados a partir de tapitas de plástico recicladas</p>
                     <a href="https://www.clarin.com/arq/bloques-fabricados-partir-tapitas-plastico-recicladas_0_nsmxBDjavN.html"
-                        class="cardLink">Continuar Leyendo</a>
+                        class="cardLink" target="_blank">Continuar Leyendo</a>
                 </div>
             </div>
         </div>
-        <button type="button" class="btn btn-info" id="botonNoticias">VER MAS NOTICIAS</button>
+        <button class="noticiasBtn">Mas Noticias</button>
     </section>
     </main>
     <footer>
