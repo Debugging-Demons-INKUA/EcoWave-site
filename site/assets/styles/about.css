@@ -13,6 +13,7 @@
     --amarillosuave: #FFD700;
     --verdeclaro: #00A896;
     --verdeoscuro: #00665E;
+    --blanco: #fff;
 }
 
 
@@ -22,15 +23,13 @@ header {
 }
 
 #header-nav {
-    background-color: white !important;
-    /* background-color: var(--verdeclaro) !important; */
+    background-color: var(--blanco) !important;
     min-height: 14vh;
 }
 
 
 .navbar {
-    background-color: white !important;
-    /* background-color: var(--verdeclaro) !important; */
+    background-color: var(--blanco) !important;
     height: 15vh;
     width: 100%;
     position: fixed !important;
@@ -44,13 +43,13 @@ header {
 }
 
 .container-fluid {
-    background-color: white;
-    /* background-color: var(--verdeclaro) !important; */
+    background-color: var(--blanco);
+    /* background-color: var(--verdeoscuro); */
 }
 
 .navbar-nav {
-    background-color: white;
-    /* background-color: var(--verdeclaro) !important; */
+    background-color: var(--blanco);
+    /* background-color: var(--verdeoscuro); */
     font-size: 120%;
     gap: 1rem;
     align-items: center !important;
@@ -64,18 +63,37 @@ header {
 
 .nav-link {
     font-weight: bold !important;
+    color: var(--grisoscuro) !important;
+    /* color: var(--blanco) !important; */
 }
 
 .nav-link:hover {
-    text-decoration: underline var(--verdeoscuro);
+    color: var(--verdeoscuro) !important;
+    /* color: var(--amarillosuave) !important; */
+}
+
+#navContainer {
+    background-color: var(--blanco) !important;
+    /* background-color: var(--verdeoscuro) !important; */
 }
 
 .active {
     color: var(--verdeoscuro) !important;
+    /* color: var(--amarillosuave) !important; */
+}
+
+/* .navbar-toggler-icon {
+    filter: invert(100%);
+} */
+
+.navbar-toggler {
+    /* border: solid 2px rgb(180, 180, 180) !important; */
+    margin-right: 1rem;
 }
 
 .icono {
-    width: 6rem;
+    width: 8rem;
+    margin-left: 1rem;
 }
 
 /* ---------- MAIN ---------- */
@@ -83,7 +101,6 @@ header {
 .imgContainer {
     width: 100%;
     height: 22rem;
-    margin-top: 1rem;
     background-image: url(../images/fondoAbout2.jpg);
     background-size: cover;
     background-position-x: 50%;
@@ -285,7 +302,6 @@ footer {
     padding-top: 1rem;
 }
 
-.footerText a {
+.footerText {
     color: white;
-    text-decoration: none;
 }
