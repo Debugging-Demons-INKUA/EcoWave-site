@@ -129,13 +129,25 @@ header {
   margin-bottom: 15px;
 }
 
-h1.heading {
+/* h1.heading {
   color: #fff;
   font-size: 1.15em;
   font-weight: 900;
   margin: 0 0 0.5em;
   color: #505050;
+} */
+
+.imgText {
+  font-size: 45px;
+  color: var(--verdeoscuro);
 }
+
+#spanImgText {
+  font-size: 50px;
+  color: var(--azuloscuro);
+  font-weight: bold;
+}
+
 
 /* ---------- FOOTER ---------- */
 footer{

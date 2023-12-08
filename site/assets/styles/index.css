@@ -101,6 +101,29 @@ main {
     min-height: 80vw;
 }
 
+.imgText {
+    font-size: 45px;
+    color: var(--verdeoscuro);
+}
+
+#spanImgText {
+    font-size: 50px;
+    color: var(--azuloscuro);
+    font-weight: bold;
+}
+
+.equipoTitle {
+    font-size: 35px;
+    font-weight: bold;
+    color: var(--verdeoscuro);
+}
+
+#spanEquipoTitle {
+    font-size: 40px;
+    color: var(--azuloscuro);
+    font-weight: bold;
+}
+
 
 /* --Mision-- */
 .misionContainer {
@@ -113,13 +136,7 @@ main {
     width: 12%;
 }
 
-.misionContainer .misionIndex h2 {
-    padding: 1rem;
-    color: var(--verdeoscuro);
-    font-size: 2.2rem;
-    font-weight: 600;
-    text-transform: uppercase;
-}
+
 
 .misionContainer .misionIndex p {
     color: var(--grisoscuro);
@@ -257,7 +274,7 @@ main {
 
 /* --Clasificacion de Residuos-- */
 
-.categoria-container .index-categoria-title {
+.categoria-container {
     text-align: center;
     margin-bottom: .5rem;
     margin-top: 3rem;
@@ -265,6 +282,8 @@ main {
     font-weight: bold;
     color: var(--verdeoscuro);
 }
+
+
 
 .categoria-container .index-categoria {
     display: grid;

@@ -98,14 +98,16 @@ header {
 }
 
 /* Títulos */
-h2 {
+/*h2 {
     font-family: 'Roboto', 'Lato', sans-serif;
     color: #00665E !important;
     text-align: center;
     /* Centrar títulos */
-    margin-bottom: 2rem;
-    /* Espacio entre títulos y contenido */
-}
+    /*margin-bottom: 2rem;
+    /* Espacio entre títulos y contenido 
+}*/
+
+
 
 /* Textos */
 p {
@@ -150,6 +152,18 @@ iframe {
     max-width: 360px;
     /* Establece un ancho máximo para controlar el tamaño máximo */
     margin: 0.3rem;
+}
+
+.equipoTitle {
+    font-size: 35px;
+    font-weight: bold;
+    color: var(--verdeoscuro);
+}
+
+#spanEquipoTitle {
+    font-size: 40px;
+    color: var(--azuloscuro);
+    font-weight: bold;
 }
 
 /* ---------- FOOTER ---------- */
