@@ -163,7 +163,7 @@ p {
 /*reciclaje*/
 #works {
     padding-top: 1.2em;
-    padding-bottom: 3em;
+    padding-bottom: 3.5em;
 }
 
 #works figcaption a {
@@ -623,6 +623,7 @@ body:last-child .blueimp-gallery-playing>.play-pause {
 }
 
 
+/* ---------- FOOTER ---------- */
 footer{
     position: relative;
     width: 100%;
@@ -662,7 +663,7 @@ footer .footer_logos, footer .footer_menu{
 
 .footer_menu li a{
     font-size: 1.1rem;
-    color: #ffffff;
+    color: var(--blanco) !important;
     margin: 0 10px;
     display: inline-block;
     text-decoration: none;

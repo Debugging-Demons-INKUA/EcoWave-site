@@ -148,7 +148,7 @@ footer{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 100px;
+  margin-top: 115px;
 }
 
 footer .footer_logos, footer .footer_menu{
@@ -177,7 +177,7 @@ footer .footer_logos, footer .footer_menu{
 
 .footer_menu li a{
   font-size: 1.1rem;
-  color: #ffffff;
+  color: var(--blanco) !important;
   margin: 0 10px;
   display: inline-block;
   text-decoration: none;

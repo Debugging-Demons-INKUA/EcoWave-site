@@ -433,7 +433,7 @@ footer{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 115px;
 }
 
 footer .footer_logos, footer .footer_menu{
@@ -486,7 +486,6 @@ footer .ola{
     left: 0;
     width: 100%;
     height: 100px;
-    /* background: red url(/assets/images/wave2.gif) center; */
     background: url(/assets/images/wave11.png);
     background-size: 1300px 100px;
 }
