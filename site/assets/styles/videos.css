@@ -1,10 +1,9 @@
 /* Estilo Normalizado */
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "Roboto", sans-serif;
 }
 
 :root {
@@ -15,20 +14,9 @@
     --amarillosuave: #FFD700;
     --verdeclaro: #00A896;
     --verdeoscuro: #00665E;
+    --blanco: #fff;
 }
 
-/* Estilos generales */
-html,
-body {
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  height: 100%;
-  width: 100%; 
-  background: #FFF;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  background-color: var(--grisclaro) !important;
-}
 
 /* ---------- HEADER ---------- */
 header {
@@ -36,22 +24,17 @@ header {
 }
 
 #header-nav {
-    background-color: white !important;
+    background-color: var(--blanco) !important;
     min-height: 14vh;
-    z-index: 1;
 }
 
-/* nav {
-    position: sticky !important;
-    top: 0px !important;
-} */
 
 .navbar {
-    background-color: white !important;
+    background-color: var(--blanco) !important;
     height: 15vh;
     width: 100%;
     position: fixed !important;
-    z-index: 1000;
+    z-index: 2 !important;
 }
 
 #navbarNav {
@@ -61,12 +44,14 @@ header {
 }
 
 .container-fluid {
-    background-color: white;
+    /* background-color: var(--blanco); */
+    background-color: var(--verdeoscuro);
 }
 
 .navbar-nav {
-    background-color: white;
-    font-size: 80%;
+    /* background-color: var(--blanco); */
+    background-color: var(--verdeoscuro);
+    font-size: 120%;
     gap: 1rem;
     align-items: center !important;
     padding: 1rem;
@@ -79,39 +64,60 @@ header {
 
 .nav-link {
     font-weight: bold !important;
+    /* color: var(--grisoscuro) !important; */
+    color: var(--blanco) !important;
 }
 
 .nav-link:hover {
-    text-decoration: underline rgb(74, 121, 2);
+    /* color: var(--verdeoscuro) !important; */
+    color: var(--amarillosuave) !important;
+}
+
+#navContainer {
+    /* background-color: var(--blanco) !important; */
+    background-color: var(--verdeoscuro) !important;
 }
 
 .active {
-    color: rgb(74, 121, 2) !important;
+    /* color: var(--verdeoscuro) !important; */
+    color: var(--amarillosuave) !important;
+}
+
+.navbar-toggler-icon {
+    filter: invert(100%);
+}
+
+.navbar-toggler {
+    /* border: solid 2px rgb(180, 180, 180) !important; */
+    margin-right: 1rem;
 }
 
 .icono {
     width: 8rem;
+    margin-left: 1rem;
 }
 
 /* Títulos */
 h2 {
-    font-family:  'Roboto', 'Lato', sans-serif;
+    font-family: 'Roboto', 'Lato', sans-serif;
     color: #00665E !important;
-    text-align: center; /* Centrar títulos */
-    margin-bottom: 2rem; /* Espacio entre títulos y contenido */
+    text-align: center;
+    /* Centrar títulos */
+    margin-bottom: 2rem;
+    /* Espacio entre títulos y contenido */
 }
 
 /* Textos */
-p{
+p {
     text-align: center;
 }
 
 /* Section */
-#papel, 
-#carton, 
-#plastico, 
-#vidrio, 
-#metales, 
+#papel,
+#carton,
+#plastico,
+#vidrio,
+#metales,
 #compostales,
 #peligrosos {
     padding: 1rem;
@@ -119,15 +125,16 @@ p{
     padding-top: 120px;
 }
 
-#papel p, 
-#carton p, 
-#plastico p, 
-#vidrio p, 
-#metales p, 
+#papel p,
+#carton p,
+#plastico p,
+#vidrio p,
+#metales p,
 #compostales p,
-#peligrosos p{
+#peligrosos p {
     column-count: 2;
-    column-gap: 50px; /* Espacio entre columnas */
+    column-gap: 50px;
+    /* Espacio entre columnas */
     text-align: justify;
 }
 
@@ -138,8 +145,10 @@ p{
 }
 
 iframe {
-    width: 100%; /* Cambia el ancho al 100% para que se ajuste a dispositivos móviles */
-    max-width: 360px; /* Establece un ancho máximo para controlar el tamaño máximo */
+    width: 100%;
+    /* Cambia el ancho al 100% para que se ajuste a dispositivos móviles */
+    max-width: 360px;
+    /* Establece un ancho máximo para controlar el tamaño máximo */
     margin: 0.3rem;
 }
 
@@ -162,28 +171,32 @@ footer {
 /* Estilos responsivos para dispositivos móviles */
 @media (max-width: 768px) {
     iframe {
-        width: 100%; /* Cambia el ancho al 100% para dispositivos móviles */
-        max-width: none; /* Elimina el ancho máximo en dispositivos móviles */
+        width: 100%;
+        /* Cambia el ancho al 100% para dispositivos móviles */
+        max-width: none;
+        /* Elimina el ancho máximo en dispositivos móviles */
     }
 
-    #papel p, 
-    #carton p, 
-    #plastico p, 
-    #vidrio p, 
-    #metales p, 
-    #compostales p{
+    #papel p,
+    #carton p,
+    #plastico p,
+    #vidrio p,
+    #metales p,
+    #compostales p {
         column-count: 1;
         text-align: justify;
     }
 
     nav ul {
-        display: none; /* Ocultar la lista en pantallas más pequeñas por defecto */
+        display: none;
+        /* Ocultar la lista en pantallas más pequeñas por defecto */
         text-align: center;
         width: 100%;
     }
 
     nav li {
-        display: block; /* Hacer que los elementos de la lista se muestren como bloques apilados */
+        display: block;
+        /* Hacer que los elementos de la lista se muestren como bloques apilados */
         margin: 5px 0;
     }
 
@@ -200,15 +213,14 @@ footer {
     nav ul {
         display: none;
     }
-    
+
     /* Mostrar el ícono de hamburguesa en pantallas más pequeñas */
     .menu-icon {
         display: block;
     }
-    
+
     /* Ocultar el ícono de hamburguesa en pantallas más grandes */
     .menu-icon-large {
         display: none;
     }
 }
-    
