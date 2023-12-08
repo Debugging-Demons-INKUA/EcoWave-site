@@ -33,7 +33,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link  active" href="#">Home</a>
+                            <a class="nav-link  active" href="#">Inicio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./reciclaje.html">Reciclaje</a>
@@ -59,8 +59,10 @@
         <!-- Columna del texto de la misión -->
         <section class="misionContainer">
             <div class="misionIndex">
-                <img src="./assets/images/icon02.png" alt="logo ecowave">
-                <h2>Nuestra Misión</h2>
+                <img src="./assets/images/icon02.png" alt="logo ecowave">   
+                <section class="imgContainer d-flex justify-content-center align-items-center">
+                    <h1 class="imgText"><span id="spanImgText">Nuestra</span> Misión</h1>
+                </section>
                 <p>
                     Nuestra misión es liderar la lucha por la sostenibilidad ambiental.
                     Nos dedicamos a la gestión de residuos, la recuperación de recursos
@@ -96,9 +98,8 @@
 
                     <div class="swiper-slide bslide">
                         <div class="banner-content">
-                            <h3>Recicla y transforma el mundo</h3>
-                            <span class="sliderSpan">Cada reciclaje cuenta en la construcción de un futuro
-                                sostenible.</span><br>
+                            <h3>Recicla y cambia el planeta</h3>
+                            <span class="sliderSpan">Cada reciclaje cuenta para un futuro verde.</span><br>
                             <button class="sliderBtn" onclick="irASeccion()">¡Me interesa!</button>
                             <script>
                                 function irASeccion() {
@@ -115,8 +116,7 @@
                     <div class="swiper-slide bslide">
                         <div class="banner-content">
                             <h3>Haz eco con tu reciclaje</h3>
-                            <span class="sliderSpan">Tus acciones diarias marcan la pauta para un mañana
-                                sostenible.</span><br>
+                            <span class="sliderSpan">Tu gesto, tu legado</span><br>
                             <button class="sliderBtn" onclick="irASeccion()">¡Me interesa!</button>
                             <script>
                                 function irASeccion() {
@@ -137,7 +137,9 @@
         <!--Seccion CLASIFICACION de Residuos inicio -->
         <section class="categoria-container" id="categorias">
 
-            <h2 class="index-categoria-title">¿Como se clasifican los residuos?</h2>
+            <section class=" d-flex justify-content-center align-items-center">
+                <h1 class="equipoTitle">¿Cómo se <span id="spanEquipoTitle">clasifican</span> los residuos?</h1>
+            </section>
 
             <div class="index-categoria">
                 <a href="#" class="index-categoria-box">
@@ -171,7 +173,9 @@
 
     <!-- Noticias -->
     <section class="noticiasSection d-flex align-items-center flex-column">
-        <h2 class="title02">Ultimas Noticias</h2>
+        <section class=" d-flex justify-content-center align-items-center">
+            <h1 class="equipoTitle"><span id="spanEquipoTitle">Últimas</span> noticias</h1>
+        </section>
         <div class="noticiasContainer d-flex align-items-center justify-content-around">
             <div class="card">
                 <div class="card-img-1"></div>
@@ -201,13 +205,37 @@
         <button class="noticiasBtn">Mas Noticias</button>
     </section>
     </main>
+
     <footer>
+        <div class="footer_olas">
+            <div class="ola" id="ola1"></div>            
+            <div class="ola" id="ola2"></div>            
+            <div class="ola" id="ola3"></div>
+            <div class="ola" id="ola4"></div>
+        </div>
+        <ul class="footer_logos">
+            <li><a href="https://inkua.de/" target="_blank"><img src="./assets/images/logo_inkua.png"></a></li>
+            <li><a href="https://www.frsr.utn.edu.ar/" target="_blank"><img src="./assets/images/logo_utn.png"></a></li>
+        </ul>
+        <ul class="footer_menu">
+            <li><a href="./index.html">Inicio</a></li>            
+            <li><a href="./reciclaje.html">Reciclaje</a></li>
+            <li><a href="./noticias.html">Noticias</a></li>
+            <li><a href="./videos.html">Videos</a></li>
+            <li><a href="./about.html">¿Quienes somos?</a></li>
+        </ul>
+        <ul class="footer_ty"><li><p>| Debuggins Demons Team agradece el apoyo y la guía brindados por los coordinadores |</p></li></ul>
+    </footer>
+
+
+
+    <!-- <footer>
         <section class="footerContainer d-flex flex-column align-items-center">
             <p class="footerText"><a href="./about.html">¿Quiénes Somos?</a></p>
             <p class="footerText"><a href="./videos.html">Videos</a></p>
             <p class="footerText"><a href="./noticias.html">Noticias</a></p>
         </section>
-    </footer>
+    </footer> -->
 
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
