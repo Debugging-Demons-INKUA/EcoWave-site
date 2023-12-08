@@ -33,7 +33,7 @@ header {
     height: 15vh;
     width: 100%;
     position: fixed !important;
-    z-index: 1 !important;
+    z-index: 2 !important;
 }
 
 #navbarNav {
