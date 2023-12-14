@@ -59,7 +59,7 @@
         <!-- Columna del texto de la misión -->
         <section class="misionContainer">
             <div class="misionIndex">
-                <img src="./assets/images/icon02.png" alt="logo ecowave">   
+                <img src="./assets/images/icon02.png" alt="logo ecowave">
                 <section class="imgContainer d-flex justify-content-center align-items-center">
                     <h1 class="imgText"><span id="spanImgText">Nuestra</span> Misión</h1>
                 </section>
@@ -141,7 +141,7 @@
                 <h1 class="equipoTitle">¿Cómo se <span id="spanEquipoTitle">clasifican</span> los residuos?</h1>
             </section>
 
-            <div class="index-categoria">
+            <div class="index-categoria d-flex flex-wrap justify-content-center align-items-center">
                 <a href="#" class="index-categoria-box">
                     <h3>Ordinarios</h3>
                 </a>
@@ -168,62 +168,66 @@
                 </a>
             </div>
         </section>
-    </main>
-    <!-- Clasificacion de Residuos fin -->
 
-    <!-- Noticias -->
-    <section class="noticiasSection d-flex align-items-center flex-column">
-        <section class=" d-flex justify-content-center align-items-center">
-            <h1 class="equipoTitle"><span id="spanEquipoTitle">Últimas</span> noticias</h1>
+        <!-- Clasificacion de Residuos fin -->
+
+        <!-- Noticias -->
+        <section class="noticiasSection d-flex align-items-center flex-column">
+            <section class=" d-flex justify-content-center align-items-center">
+                <h1 class="equipoTitle"><span id="spanEquipoTitle">Últimas</span> noticias</h1>
+            </section>
+            <div class="noticiasContainer d-flex align-items-center justify-content-around flex-wrap gap-2">
+                <div class="card">
+                    <div class="card-img-1"></div>
+                    <div class="card-body">
+                        <p class="card-text">Un cordobés creó un auto que anda a agua y basura </p>
+                        <a href="https://www.losandes.com.ar/sociedad/un-cordobes-creo-un-auto-que-anda-a-agua-y-basura-y-ofrece-gratis-los-planos/#:~:text=Sociedad%20%2F%20C%C3%B3rdoba-,Un%20cordob%C3%A9s%20cre%C3%B3%20un%20auto%20que%20anda%20a%20agua%20y,que%20su%20auto%20no%20contamina"
+                            class="cardLink" target="_blank">Continuar Leyendo</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-2"></div>
+                    <div class="card-body">
+                        <p class="card-text">Dos pueblos reciben electricidad hecha con residuos</p>
+                        <a href="https://www.lanacion.com.ar/economia/campo/agricultura/tienen-un-campo-de-1000-hectareas-y-abastecen-de-energia-a-dos-pueblos-gracias-a-una-innovacion-nid17052022/"
+                            class="cardLink" target="_blank">Continuar Leyendo</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-3"></div>
+                    <div class="card-body">
+                        <p class="card-text">Bloques fabricados a partir de tapitas de plástico recicladas</p>
+                        <a href="https://www.clarin.com/arq/bloques-fabricados-partir-tapitas-plastico-recicladas_0_nsmxBDjavN.html"
+                            class="cardLink" target="_blank">Continuar Leyendo</a>
+                    </div>
+                </div>
+            </div>
+            <button class="noticiasBtn">Mas Noticias</button>
         </section>
-        <div class="noticiasContainer d-flex align-items-center justify-content-around">
-            <div class="card">
-                <div class="card-img-1"></div>
-                <div class="card-body">
-                    <p class="card-text">Un cordobés creó un auto que anda a agua y basura </p>
-                    <a href="https://www.losandes.com.ar/sociedad/un-cordobes-creo-un-auto-que-anda-a-agua-y-basura-y-ofrece-gratis-los-planos/#:~:text=Sociedad%20%2F%20C%C3%B3rdoba-,Un%20cordob%C3%A9s%20cre%C3%B3%20un%20auto%20que%20anda%20a%20agua%20y,que%20su%20auto%20no%20contamina"
-                        class="cardLink" target="_blank">Continuar Leyendo</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-img-2"></div>
-                <div class="card-body">
-                    <p class="card-text">Dos pueblos reciben electricidad hecha con residuos</p>
-                    <a href="https://www.lanacion.com.ar/economia/campo/agricultura/tienen-un-campo-de-1000-hectareas-y-abastecen-de-energia-a-dos-pueblos-gracias-a-una-innovacion-nid17052022/"
-                        class="cardLink" target="_blank">Continuar Leyendo</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-img-3"></div>
-                <div class="card-body">
-                    <p class="card-text">Bloques fabricados a partir de tapitas de plástico recicladas</p>
-                    <a href="https://www.clarin.com/arq/bloques-fabricados-partir-tapitas-plastico-recicladas_0_nsmxBDjavN.html"
-                        class="cardLink" target="_blank">Continuar Leyendo</a>
-                </div>
-            </div>
-        </div>
-        <button class="noticiasBtn">Mas Noticias</button>
-    </section>
     </main>
 
     <footer>
         <div class="footer_olas">
-            <div class="ola" id="ola1"></div>            
-            <div class="ola" id="ola2"></div>            
+            <div class="ola" id="ola1"></div>
+            <div class="ola" id="ola2"></div>
             <div class="ola" id="ola3"></div>
             <div class="ola" id="ola4"></div>
-        </div>         
-        <div class="box_logos">
-            <ul class="footer_dbt"><li><p>2023<span>DebugginsDemons</span></p></li></ul>
-            <ul class="footer_debugginsdemons">
-                <li><img src="./assets/images/Debugging-Demons-logo.png"></li>
-            </ul>
-            <ul class="footer_logos">
-                <li><a href="https://inkua.de/" target="_blank"><img src="./assets/images/logo_inkua.png"></a></li>
-                <li><a href="https://www.frsr.utn.edu.ar/" target="_blank"><img src="./assets/images/logo_utn.png"></a></li>
-            </ul>
         </div>
-        <ul class="footer_ty"><li><p>| Debuggins Demons Team agradece el apoyo y la guía brindados por los coordinadores |</p></li></ul>
+        <div class="footerBox d-flex flex-wrap align-items-center justify-content-around">
+            <section class="fbox01">
+                <p>2023<span class="fspan">DebugginsDemons</span></p>
+            </section>
+            <section class="fbox02">
+                <img src="./assets/images/Debugging-Demons-logo.png" alt="logo debugging demons">
+            </section>
+            <section class="fbox03 d-flex flex-column">
+                <a href="https://inkua.de/" target="_blank"><img src="./assets/images/logo_inkua.png"></a>
+                <a href="https://www.frsr.utn.edu.ar/" target="_blank"><img src="./assets/images/logo_utn.png"></a>
+            </section>
+        </div>
+        <div class="footer_ty">
+            <p>| Debuggins Demons Team agradece el apoyo y la guía brindados por los coordinadores |</p>
+        </div>
     </footer>
 
     <!-- Bootstrap -->
