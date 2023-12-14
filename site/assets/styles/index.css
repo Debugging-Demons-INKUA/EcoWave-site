@@ -449,7 +449,6 @@ footer {
     min-height: 50px;
     padding: 10px 0px;
     display: flex;
-    /* justify-content: space-around; */
     align-items: center;
     flex-direction: column;
     margin-top: 115px;
@@ -565,7 +564,7 @@ footer .ola {
     }
 }
 
-
+/* Footer media */
 @media screen and (max-width: 960px) {
     .bannerIndex {
         display: none;
