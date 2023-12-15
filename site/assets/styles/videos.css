@@ -45,12 +45,10 @@ header {
 }
 
 .container-fluid {
-    /* background-color: var(--blanco); */
     background-color: var(--verdeoscuro);
 }
 
 .navbar-nav {
-    /* background-color: var(--blanco); */
     background-color: var(--verdeoscuro);
     font-size: 120%;
     gap: 1rem;
@@ -65,22 +63,18 @@ header {
 
 .nav-link {
     font-weight: bold !important;
-    /* color: var(--grisoscuro) !important; */
     color: var(--blanco) !important;
 }
 
 .nav-link:hover {
-    /* color: var(--verdeoscuro) !important; */
     color: var(--amarillosuave) !important;
 }
 
 #navContainer {
-    /* background-color: var(--blanco) !important; */
     background-color: var(--verdeoscuro) !important;
 }
 
 .active {
-    /* color: var(--verdeoscuro) !important; */
     color: var(--amarillosuave) !important;
 }
 
@@ -89,7 +83,6 @@ header {
 }
 
 .navbar-toggler {
-    /* border: solid 2px rgb(180, 180, 180) !important; */
     margin-right: 1rem;
 }
 
@@ -98,15 +91,6 @@ header {
     margin-left: 1rem;
 }
 
-/* Títulos */
-/*h2 {
-    font-family: 'Roboto', 'Lato', sans-serif;
-    color: #00665E !important;
-    text-align: center;
-    /* Centrar títulos */
-/*margin-bottom: 2rem;
-    /* Espacio entre títulos y contenido 
-}*/
 
 .anchorsMenu {
     position: fixed;
@@ -164,7 +148,6 @@ ol {
 
 .video-links {
     width: 100%;
-    /* background-color: rgba(51, 51, 51, 0.9); */
     font-weight: bold;
     padding: .5rem;
 }
@@ -175,7 +158,6 @@ ol {
 }
 
 iframe {
-    /* background-color: var(--grisclaro); */
     background-image: url(../images/videoBgGif.gif);
     background-size: 100%;
     background-position-y: 50%;
@@ -212,7 +194,6 @@ p {
 #peligrosos p {
     column-count: 2;
     column-gap: 50px;
-    /* Espacio entre columnas */
     text-align: justify;
 }
 
@@ -370,9 +351,7 @@ footer .ola {
 
     iframe {
         width: 100%;
-        /* Cambia el ancho al 100% para dispositivos móviles */
         max-width: none;
-        /* Elimina el ancho máximo en dispositivos móviles */
     }
 
     #papel p,
@@ -387,14 +366,12 @@ footer .ola {
 
     nav ul {
         display: none;
-        /* Ocultar la lista en pantallas más pequeñas por defecto */
         text-align: center;
         width: 100%;
     }
 
     nav li {
         display: block;
-        /* Hacer que los elementos de la lista se muestren como bloques apilados */
         margin: 5px 0;
     }
 
@@ -407,17 +384,14 @@ footer .ola {
         padding: 5px;
     }
 
-    /* Ocultar la lista de navegación en pantallas más pequeñas */
     nav ul {
         display: none;
     }
 
-    /* Mostrar el ícono de hamburguesa en pantallas más pequeñas */
     .menu-icon {
         display: block;
     }
 
-    /* Ocultar el ícono de hamburguesa en pantallas más grandes */
     .menu-icon-large {
         display: none;
     }

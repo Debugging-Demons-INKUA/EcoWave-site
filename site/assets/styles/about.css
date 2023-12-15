@@ -44,12 +44,10 @@ header {
 }
 
 .container-fluid {
-    /* background-color: var(--blanco); */
     background-color: var(--verdeoscuro);
 }
 
 .navbar-nav {
-    /* background-color: var(--blanco); */
     background-color: var(--verdeoscuro);
     font-size: 120%;
     gap: 1rem;
@@ -64,22 +62,18 @@ header {
 
 .nav-link {
     font-weight: bold !important;
-    /* color: var(--grisoscuro) !important; */
     color: var(--blanco) !important;
 }
 
 .nav-link:hover {
-    /* color: var(--verdeoscuro) !important; */
     color: var(--amarillosuave) !important;
 }
 
 #navContainer {
-    /* background-color: var(--blanco) !important; */
     background-color: var(--verdeoscuro) !important;
 }
 
 .active {
-    /* color: var(--verdeoscuro) !important; */
     color: var(--amarillosuave) !important;
 }
 
@@ -88,7 +82,6 @@ header {
 }
 
 .navbar-toggler {
-    /* border: solid 2px rgb(180, 180, 180) !important; */
     margin-right: 1rem;
 }
 
@@ -226,7 +219,6 @@ header {
 .contenedorTarjetas {
     border-top: 2px solid black;
     width: 100%;
-    /* margin: auto; */
     margin-top: 2rem;
     background-color: var(--grisoscuro);
 }
@@ -238,9 +230,6 @@ header {
     width: 13rem;
     height: 16rem;
     position: relative;
-    /* transform: translate(-50%, -50%); */
-    /* top: 50%; */
-    /* left: 50%; */
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6);
     overflow: hidden;
 }

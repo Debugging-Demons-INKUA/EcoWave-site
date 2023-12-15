@@ -45,12 +45,10 @@ header {
 }
 
 .container-fluid {
-    /* background-color: var(--blanco); */
     background-color: var(--verdeoscuro);
 }
 
 .navbar-nav {
-    /* background-color: var(--blanco); */
     background-color: var(--verdeoscuro);
     font-size: 120%;
     gap: 1rem;
@@ -65,22 +63,18 @@ header {
 
 .nav-link {
     font-weight: bold !important;
-    /* color: var(--grisoscuro) !important; */
     color: var(--blanco) !important;
 }
 
 .nav-link:hover {
-    /* color: var(--verdeoscuro) !important; */
     color: var(--amarillosuave) !important;
 }
 
 #navContainer {
-    /* background-color: var(--blanco) !important; */
     background-color: var(--verdeoscuro) !important;
 }
 
 .active {
-    /* color: var(--verdeoscuro) !important; */
     color: var(--amarillosuave) !important;
 }
 
@@ -89,7 +83,6 @@ header {
 }
 
 .navbar-toggler {
-    /* border: solid 2px rgb(180, 180, 180) !important; */
     margin-right: 1rem;
 }
 
@@ -192,7 +185,6 @@ p {
     float: left;
     overflow: hidden;
     margin: 0;
-    /*change here for spacing*/
     width: 33.333333333%;
     text-align: center;
     cursor: pointer;
@@ -230,8 +222,6 @@ p {
     text-shadow: 2px 2px 0 #000;
 }
 
-/* Anchor will cover the whole item by default */
-/* For some effects it will show as a button */
 .grid figure figcaption>a {
     z-index: 1000;
     text-indent: 200%;
@@ -256,26 +246,8 @@ p {
 }
 
 
-/*---------------*/
-/***** Oscar *****/
-/*---------------*/
-
-/* figure.effect-oscar {
-    background: -webkit-linear-gradient(45deg, #22682a 0%, #9b4a1b 40%, #3a342a 100%);
-    background: linear-gradient(45deg, #22682a 0%, #9b4a1b 40%, #3a342a 100%);
-} */
-
-/* figure.effect-oscar img {
-	opacity: 0.9;
-	-webkit-transition: opacity 0.35s;
-	transition: opacity 0.35s;
-} */
-
 figure.effect-oscar figcaption {
     padding: 15%;
-    /* 	background-color: rgba(58,52,42,0.7);
-	-webkit-transition: background-color 0.35s;
-	transition: background-color 0.35s; */
 }
 
 figure.effect-oscar figcaption::before {
