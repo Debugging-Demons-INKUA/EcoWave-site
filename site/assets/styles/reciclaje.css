@@ -15,6 +15,7 @@
     --verdeclaro: #00A896;
     --verdeoscuro: #00665E;
     --blanco: #fff;
+    --negro: #000;
 }
 
 
@@ -98,8 +99,6 @@ header {
 }
 
 
-
-
 a {
     color: #00a9c6;
     text-decoration: none;
@@ -130,23 +129,24 @@ h4 {
 }
 
 h1 {
-    font: 700 5em Roboto, Arial, Helvetica;
+    font: 700 5em;
     margin: 0.25em 0;
     text-transform: uppercase;
 }
 
 h2 {
-    font: 300 2.5em Roboto, Arial, Helvetica;
+    font: 300 2.5em;
+    ;
     margin-bottom: 1.5em;
 }
 
 h3 {
-    font: 300 2em Roboto, Arial, Helvetica;
+    font: 300 2em;
     margin: 2em 0 1em 0;
 }
 
 h4 {
-    font: 300 1.5em Roboto, Arial, Helvetica;
+    font: 300 1.5em;
     margin-bottom: 1em;
 }
 
@@ -161,17 +161,14 @@ p {
 }
 
 /*reciclaje*/
-#works {
-    padding-top: 1.2em;
-    padding-bottom: 3.5em;
-}
 
 #works figcaption a {
-    border: 1px solid #fff;
     margin-top: 1em;
     display: inline-block;
-    color: #fff;
+    color: var(--blanco);
     padding: 0 2em;
+    text-decoration: none;
+    background-color: var(--grisoscuro);
 }
 
 #works figcaption a:hover {
@@ -180,7 +177,20 @@ p {
 }
 
 /*reciclaje*/
+.modal__container {
+    background-color: var(--negro) !important;
+    padding-bottom: 0 !important;
+}
 
+.modal_div_style {
+    background-color: var(--negro) !important;
+    margin: 0 !important;
+    padding-top: 20rem !important;
+}
+
+.modal_iframe_style {
+    background-color: var(--negro) !important;
+}
 
 /* Efectos especiales*/
 .grid {
@@ -212,6 +222,7 @@ p {
 .grid figure figcaption {
     padding: 2em;
     color: #fff;
+    border: 1px solid var(--blanco);
     text-transform: uppercase;
     font-size: 1.25em;
     -webkit-backface-visibility: hidden;
@@ -230,6 +241,7 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
+    text-shadow: 2px 2px 0 #000;
 }
 
 /* Anchor will cover the whole item by default */
@@ -321,44 +333,44 @@ figure.effect-oscar:hover p {
 }
 
 figure.effect-oscar:hover .peligrosos {
-    background-color: rgba(227, 45, 21, 0.8);
+    background-color: rgba(227, 45, 21, 0.5);
 }
 
 figure.effect-oscar:hover .vidrios {
-    background-color: rgba(90, 247, 85, 0.8);
+    background-color: rgba(90, 247, 85, 0.5);
 }
 
 figure.effect-oscar:hover .plasticos {
-    background-color: rgba(0, 160, 223, 0.8);
+    background-color: rgba(0, 160, 223, 0.5);
 }
 
 figure.effect-oscar:hover .papelCarton {
-    background-color: rgba(240, 202, 77, 0.8);
+    background-color: rgba(240, 202, 77, 0.5);
 }
 
 
 figure.effect-oscar:hover .metales {
-    background-color: rgba(175, 159, 157, 0.8);
+    background-color: rgba(175, 159, 157, 0.5);
 }
 
 figure.effect-oscar:hover .organicos {
-    background-color: rgba(0, 175, 145, 0.8);
+    background-color: rgba(0, 175, 145, 0.5);
 }
 
 figure.effect-oscar:hover .residuosOrd {
-    background-color: rgba(240, 245, 244, 0.8);
+    background-color: rgba(240, 245, 244, 0.5);
 }
 
 figure.effect-oscar:hover .no-reciclables {
-    background-color: rgba(9, 10, 10, 0.8);
+    background-color: rgba(9, 10, 10, 0.5);
 }
 
 figure.effect-oscar:hover .consejos {
-    background-color: rgba(248, 112, 0, 0.8)
+    background-color: rgba(248, 112, 0, 0.5)
 }
 
 figure.effect-oscar:hover figcaption {
-    background-color: rgba(175, 159, 157, 0.8);
+    background-color: rgba(175, 159, 157, 0.5);
 }
 
 
@@ -387,6 +399,27 @@ figure.effect-oscar:hover img {
 
 
 /*Galeria */
+.modal__close {
+    border: none !important;
+    border-radius: 10px !important;
+    background-color: var(--blanco) !important;
+    padding: 10px 15px !important;
+    margin-top: .5rem !important;
+    font-weight: 500 !important;
+    font-size: 1.1rem !important;
+    color: var(--negro) !important;
+    box-shadow: inset 0 0 0 0 #FFD700 !important;
+    transition: ease-out 0.4s !important;
+    outline: none !important;
+    margin-bottom: 30px !important;
+    margin-top: 20px !important;
+}
+
+.modal__close:hover {
+    box-shadow: inset 150px 0 0 0 #FFD700 !important;
+    cursor: pointer !important;
+    color: var(--grisoscuro) !important;
+}
 
 .blueimp-gallery,
 .blueimp-gallery>.slides>.slide>.slide-content {
@@ -404,7 +437,7 @@ figure.effect-oscar:hover img {
     height: auto;
     max-width: 100%;
     max-height: 100%;
-    opacity: 1
+    opacity: 1;
 }
 
 .blueimp-gallery {
@@ -417,7 +450,7 @@ figure.effect-oscar:hover img {
     display: none;
     direction: ltr;
     -ms-touch-action: none;
-    touch-action: none
+    touch-action: none;
 }
 
 .blueimp-gallery-carousel {
@@ -427,7 +460,7 @@ figure.effect-oscar:hover img {
     padding-bottom: 56.25%;
     box-shadow: 0 0 10px #000;
     -ms-touch-action: pan-y;
-    touch-action: pan-y
+    touch-action: pan-y;
 }
 
 .blueimp-gallery-display {
@@ -438,7 +471,7 @@ figure.effect-oscar:hover img {
 .blueimp-gallery>.slides {
     position: relative;
     height: 100%;
-    overflow: hidden
+    overflow: hidden;
 }
 
 .blueimp-gallery-carousel>.slides {
@@ -454,7 +487,7 @@ figure.effect-oscar:hover img {
     -moz-transition-timing-function: cubic-bezier(0.645, .045, .355, 1);
     -ms-transition-timing-function: cubic-bezier(0.645, .045, .355, 1);
     -o-transition-timing-function: cubic-bezier(0.645, .045, .355, 1);
-    transition-timing-function: cubic-bezier(0.645, .045, .355, 1)
+    transition-timing-function: cubic-bezier(0.645, .045, .355, 1);
 }
 
 .blueimp-gallery,
@@ -463,12 +496,12 @@ figure.effect-oscar:hover img {
     -moz-transition: opacity .5s linear;
     -ms-transition: opacity .5s linear;
     -o-transition: opacity .5s linear;
-    transition: opacity .5s linear
+    transition: opacity .5s linear;
 }
 
 .blueimp-gallery>.slides>.slide-loading {
     background: url(../img/loading.gif) center no-repeat;
-    background-size: 64px 64px
+    background-size: 64px 64px;
 }
 
 .blueimp-gallery>.slides>.slide-loading>.slide-content {
@@ -509,7 +542,7 @@ figure.effect-oscar:hover img {
     border-radius: 23px;
     opacity: .5;
     cursor: pointer;
-    display: none
+    display: none;
 }
 
 .blueimp-gallery>.next {

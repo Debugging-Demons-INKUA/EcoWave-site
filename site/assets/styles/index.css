@@ -107,7 +107,7 @@ main {
 }
 
 #spanImgText {
-    font-size: 50px;
+    font-size: 45px;
     color: var(--azuloscuro);
     font-weight: bold;
 }
@@ -119,7 +119,7 @@ main {
 }
 
 #spanEquipoTitle {
-    font-size: 40px;
+    font-size: 35px;
     color: var(--azuloscuro);
     font-weight: bold;
 }
