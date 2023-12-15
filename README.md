@@ -24,7 +24,7 @@ git clone [https://github.com/tu-usuario/inkua-proyecto.git](https://github.com/
 cd ecowave/site
 ```
 Abre index.html en tu navegador o bien ingresa a esta URL: 
-```[https://debugging-demons-inkua.github.io/EcoWave-site/site/index.html](https://debugging-demons-inkua.github.io/EcoWave-site/index.html)```
+```https://debugging-demons-inkua.github.io/EcoWave-site/index.html```
 
 ## Características
 - Gestión de Residuos: Describe aquí las características relacionadas con la gestión de residuos.
