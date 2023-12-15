@@ -177,20 +177,6 @@ p {
 }
 
 /*reciclaje*/
-.modal__container {
-    background-color: var(--negro) !important;
-    padding-bottom: 0 !important;
-}
-
-.modal_div_style {
-    background-color: var(--negro) !important;
-    margin: 0 !important;
-    padding-top: 20rem !important;
-}
-
-.modal_iframe_style {
-    background-color: var(--negro) !important;
-}
 
 /* Efectos especiales*/
 .grid {
@@ -400,25 +386,26 @@ figure.effect-oscar:hover img {
 
 /*Galeria */
 .modal__close {
-    border: none !important;
-    border-radius: 10px !important;
-    background-color: var(--blanco) !important;
-    padding: 10px 15px !important;
-    margin-top: .5rem !important;
-    font-weight: 500 !important;
-    font-size: 1.1rem !important;
-    color: var(--negro) !important;
-    box-shadow: inset 0 0 0 0 #FFD700 !important;
-    transition: ease-out 0.4s !important;
-    outline: none !important;
-    margin-bottom: 30px !important;
-    margin-top: 20px !important;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--blanco);
+    padding: 10px 15px;
+    margin-top: .5rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: var(--negro);
+    box-shadow: inset 0 0 0 0 #FFD700;
+    transition: ease-out 0.4s;
+    outline: none;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    text-decoration: none;
 }
 
 .modal__close:hover {
-    box-shadow: inset 150px 0 0 0 #FFD700 !important;
-    cursor: pointer !important;
-    color: var(--grisoscuro) !important;
+    box-shadow: inset 150px 0 0 0 #FFD700;
+    cursor: pointer;
+    color: var(--grisoscuro);
 }
 
 .blueimp-gallery,
@@ -666,7 +653,7 @@ footer {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 115px;
+    margin-top: 90px;
 }
 
 .footerBox {
