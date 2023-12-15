@@ -240,6 +240,12 @@ footer {
     color: var(--verdeclaro);
 }
 
+.fbox01,
+.fbox02,
+.fbox03 {
+    width: 12rem;
+}
+
 .fspan {
     color: var(--blanco);
     font-weight: bold;

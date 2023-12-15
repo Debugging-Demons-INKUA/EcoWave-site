@@ -297,6 +297,12 @@ footer {
     width: 100%;
 }
 
+.fbox01,
+.fbox02,
+.fbox03 {
+    width: 12rem;
+}
+
 .fbox01 {
     color: var(--verdeclaro);
 }
