@@ -1,9 +1,9 @@
-
 /* Estilo Normalizado */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "Roboto", sans-serif;
 }
 
 :root {
@@ -14,6 +14,7 @@
     --amarillosuave: #FFD700;
     --verdeclaro: #00A896;
     --verdeoscuro: #00665E;
+    --blanco: #fff;
 }
 
 /* ---------- HEADER ---------- */
@@ -22,23 +23,16 @@ header {
 }
 
 #header-nav {
-    background-color: white !important;
+    background-color: var(--blanco) !important;
     min-height: 14vh;
-    z-index: 1;
 }
 
-/* nav {
-    position: sticky !important;
-    top: 0px !important;
-} */
-
-
 .navbar {
-    background-color: white !important;
+    background-color: var(--blanco) !important;
     height: 15vh;
     width: 100%;
     position: fixed !important;
-    z-index: 1000;
+    z-index: 2 !important;
 }
 
 #navbarNav {
@@ -48,11 +42,11 @@ header {
 }
 
 .container-fluid {
-    background-color: white;
+    background-color: var(--verdeoscuro);
 }
 
 .navbar-nav {
-    background-color: white;
+    background-color: var(--verdeoscuro);
     font-size: 120%;
     gap: 1rem;
     align-items: center !important;
@@ -66,18 +60,32 @@ header {
 
 .nav-link {
     font-weight: bold !important;
+    color: var(--blanco) !important;
 }
 
 .nav-link:hover {
-    text-decoration: underline rgb(74, 121, 2);
+    color: var(--amarillosuave) !important;
+}
+
+#navContainer {
+    background-color: var(--verdeoscuro) !important;
 }
 
 .active {
-    color: rgb(74, 121, 2) !important;
+    color: var(--amarillosuave) !important;
+}
+
+.navbar-toggler-icon {
+    filter: invert(100%);
+}
+
+.navbar-toggler {
+    margin-right: 1rem;
 }
 
 .icono {
     width: 8rem;
+    margin-left: 1rem;
 }
 
 /* ---------- MAIN ---------- */
@@ -86,31 +94,46 @@ main {
     min-height: 80vw;
 }
 
+.imgText {
+    font-size: 45px;
+    color: var(--verdeoscuro);
+}
+
+#spanImgText {
+    font-size: 45px;
+    color: var(--azuloscuro);
+    font-weight: bold;
+}
+
+.equipoTitle {
+    font-size: 35px;
+    font-weight: bold;
+    color: var(--verdeoscuro);
+}
+
+#spanEquipoTitle {
+    font-size: 35px;
+    color: var(--azuloscuro);
+    font-weight: bold;
+}
+
 
 /* --Mision-- */
-.misionContainer { 
-    width: 100%;    
+.misionContainer {
+    width: 100%;
     text-align: center;
 }
 
-.misionContainer .misionIndex img{   
+.misionContainer .misionIndex img {
     margin-top: 4rem;
     width: 12%;
 }
 
-.misionContainer .misionIndex h2{ 
-    padding: 1rem;
-    color: var(--verdeoscuro);
-    font-size: 2.2rem;
-    font-family: "Roboto", sans-serif;
-    font-weight: 600;
-    text-transform: uppercase;
-}
 
-.misionContainer .misionIndex p{
+
+.misionContainer .misionIndex p {
     color: var(--grisoscuro);
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;    
+    font-weight: 400;
     font-size: 1.2rem;
     padding: 0 4rem 0;
 }
@@ -118,7 +141,7 @@ main {
 
 /* --Banner Slider-- */
 
-.bannerIndex{
+.bannerIndex {
     height: 400px;
     width: 95%;
     margin-left: 30px;
@@ -150,28 +173,25 @@ main {
     text-align: center;
 }
 
-.bannerIndex .bslide .banner-content h3{
+.bannerIndex .bslide .banner-content h3 {
     font-size: 2.5rem;
-    color: var(--verdeclaro);
-    font-family: "Roboto", sans-serif;
+    color: var(--verdeoscuro) !important;
 }
 
-.bannerIndex .bslide .banner-content span{
+.bannerIndex .bslide .banner-content span {
     margin: 1rem 0;
     font-size: 1.5rem;
     color: var(--grisoscuro);
-    text-transform: lowercase;    
-    font-family: "Roboto", sans-serif;
+    text-transform: lowercase;
 }
 
-.bannerIndex .bslide .banner-content button{
+.bannerIndex .bslide .banner-content button {
     border: none;
     border-radius: 10px;
     background-color: var(--verdeoscuro);
     padding: 10px 15px;
-    margin-top: 40px;   
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;    
+    margin-top: 40px;
+    font-weight: 500;
     font-size: 1.1rem;
     color: var(--grisclaro);
     box-shadow: inset 0 0 0 0 #FFD700;
@@ -179,14 +199,12 @@ main {
     outline: none;
 }
 
-.bannerIndex .bslide .banner-content button:hover{
+.bannerIndex .bslide .banner-content button:hover {
     box-shadow: inset 150px 0 0 0 #FFD700;
     cursor: pointer;
     color: var(--grisoscuro);
 }
 
-=======
-}
 
 .bannerIndex .bslide {
     border-radius: 20px;
@@ -213,28 +231,26 @@ main {
     text-align: center;
 }
 
-.bannerIndex .bslide .banner-content h3{
+.bannerIndex .bslide .banner-content h3 {
     font-size: 2.5rem;
     color: var(--verdeclaro);
-    font-family: "Roboto", sans-serif;
 }
 
-.bannerIndex .bslide .banner-content span{
+.sliderSpan {
     margin: 1rem 0;
     font-size: 1.5rem;
     color: var(--grisoscuro);
-    text-transform: lowercase;    
-    font-family: "Roboto", sans-serif;
+    text-transform: lowercase;
+    height: 10rem !important;
 }
 
-.bannerIndex .bslide .banner-content button{
+.sliderBtn {
     border: none;
     border-radius: 10px;
     background-color: var(--verdeoscuro);
     padding: 10px 15px;
-    margin-top: 40px;   
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;    
+    margin-top: 40px;
+    font-weight: 500;
     font-size: 1.1rem;
     color: var(--grisclaro);
     box-shadow: inset 0 0 0 0 #FFD700;
@@ -242,7 +258,7 @@ main {
     outline: none;
 }
 
-.bannerIndex .bslide .banner-content button:hover{
+.sliderBtn:hover {
     box-shadow: inset 150px 0 0 0 #FFD700;
     cursor: pointer;
     color: var(--grisoscuro);
@@ -251,32 +267,29 @@ main {
 
 /* --Clasificacion de Residuos-- */
 
-.categoria-container .index-categoria-title{
+.categoria-container {
     text-align: center;
-    margin-bottom: 2.5rem;
-    margin-top: 2.5rem;
-    padding: 3rem 0 0;
+    margin-bottom: .5rem;
+    margin-top: 3rem;
+    font-size: 35px;
+    font-weight: bold;
     color: var(--verdeoscuro);
-    font-size: 2.2rem;
-    font-family: "Roboto", sans-serif;
-    font-weight: 600;
-    text-transform: uppercase;
 }
 
-.categoria-container .index-categoria{
+
+
+.categoria-container .index-categoria {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    gap: 1.5rem;
-    align-items: flex-start;
+    gap: 1rem;
     margin: 0 auto;
     max-width: 1200px;
     padding: 2rem;
 }
 
-.categoria-container .index-categoria .index-categoria-box{
+.categoria-container .index-categoria .index-categoria-box {
     background-color: #00665E;
-    width: 250px;
-    height: 250px;
+    width: 16rem;
+    height: 16rem;
     border-radius: 15px;
     text-align: center;
     text-decoration: none;
@@ -285,43 +298,55 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all .3s;
 }
 
-.categoria-container .index-categoria .index-categoria-box h3{   
+.index-categoria-box:hover {
+    transform: scale(1.03);
+}
+
+.categoria-container .index-categoria .index-categoria-box h3 {
     font-size: 2rem;
     color: var(--grisclaro);
     width: 100%;
-    padding-top: 5px; 
+    padding-top: 5px;
     padding-bottom: 8px;
-    background-color: rgba(131,145,146,.9);
+    background-color: rgba(131, 145, 146, .9);
 }
 
-.categoria-container .index-categoria .index-categoria-box h3:hover{
+.categoria-container .index-categoria .index-categoria-box h3:hover {
     color: var(--amarillosuave);
 }
 
-.categoria-container .index-categoria .index-categoria-box:nth-child(1){
+.categoria-container .index-categoria .index-categoria-box:nth-child(1) {
     background-image: url(https://earth911.com/wp-content/uploads/2016/06/mixed-waste-mix.jpg);
 }
-.categoria-container .index-categoria .index-categoria-box:nth-child(2){
+
+.categoria-container .index-categoria .index-categoria-box:nth-child(2) {
     background-image: url(https://img.freepik.com/foto-gratis/pizza-vietnamita_1339-2782.jpg?size=626&ext=jpg);
 }
-.categoria-container .index-categoria .index-categoria-box:nth-child(3){
+
+.categoria-container .index-categoria .index-categoria-box:nth-child(3) {
     background-image: url(https://img.freepik.com/foto-gratis/variedad-frutas-verduras-saludables-monton-colorido-generado-ia_24640-93381.jpg?size=626&ext=jpg);
 }
-.categoria-container .index-categoria .index-categoria-box:nth-child(4){
+
+.categoria-container .index-categoria .index-categoria-box:nth-child(4) {
     background-image: url(https://img.freepik.com/foto-gratis/disposicion-diferentes-objetos-desechados_23-2148996918.jpg?size=626&ext=jpg);
 }
-.categoria-container .index-categoria .index-categoria-box:nth-child(5){
+
+.categoria-container .index-categoria .index-categoria-box:nth-child(5) {
     background-image: url(https://i.guim.co.uk/img/media/5f9b5ec6bac9e97acc437ec7e3e965f6a0c119cd/0_129_6720_4032/master/6720.jpg?width=620&dpr=2&s=none);
 }
-.categoria-container .index-categoria .index-categoria-box:nth-child(6){
+
+.categoria-container .index-categoria .index-categoria-box:nth-child(6) {
     background-image: url(https://media.hswstatic.com/eyJidWNrZXQiOiJjb250ZW50Lmhzd3N0YXRpYy5jb20iLCJrZXkiOiJnaWZcL2dsYXNzLXJlY3ljbGluZy5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOiIxMjAwIn19fQ==);
 }
-.categoria-container .index-categoria .index-categoria-box:nth-child(7){
+
+.categoria-container .index-categoria .index-categoria-box:nth-child(7) {
     background-image: url(https://everydayrecycler.com/wp-content/uploads/2020/07/Depositphotos_40012335_xl-2015_optimized.jpg);
 }
-.categoria-container .index-categoria .index-categoria-box:nth-child(8){
+
+.categoria-container .index-categoria .index-categoria-box:nth-child(8) {
     background-image: url(https://www.netregs.org.uk/media/1496/batteries-362759357.jpg?width=800&height=533.2);
 }
 
@@ -329,8 +354,24 @@ main {
 
 /* Noticias */
 .title02 {
-    margin-top: 2rem;
-    color: rgb(152, 58, 11);
+    margin-top: 3rem;
+    margin-bottom: .5rem;
+    font-size: 35px;
+    font-weight: bold;
+    color: var(--verdeoscuro);
+}
+
+.card {
+    width: 16rem;
+}
+
+.card-text {
+    height: 5rem;
+}
+
+.cardLink {
+    text-decoration: none;
+    color: var(--azuloscuro);
 }
 
 .noticiasSection {
@@ -341,23 +382,199 @@ main {
     width: 90%;
 }
 
-#botonNoticias {
-    color: white;
-    font-weight: bold;
+.noticiasBtn {
+    border: none;
+    border-radius: 10px;
+    background-color: var(--verdeoscuro);
+    padding: 10px 15px;
+    margin-top: .5rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: var(--grisclaro);
+    box-shadow: inset 0 0 0 0 #FFD700;
+    transition: ease-out 0.4s;
+    outline: none;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.noticiasBtn:hover {
+    box-shadow: inset 150px 0 0 0 #FFD700;
+    cursor: pointer;
+    color: var(--grisoscuro);
+}
+
+.card-img-1 {
+    width: 16rem;
+    height: 10rem;
+    background-image: url(../images/noticia-1.jpg);
+    background-size: 100%;
+    background-position-x: 50%;
+    background-position-y: 50%;
+}
+
+.card-img-2 {
+    width: 16rem;
+    height: 10rem;
+    background-image: url(../images/noticia-2.png);
+    background-size: 100%;
+    background-position-x: 50%;
+    background-position-y: 50%;
+}
+
+.card-img-3 {
+    width: 16rem;
+    height: 10rem;
+    background-image: url(../images/noticia-3.png);
+    background-size: 130%;
+    background-position-x: 50%;
+    background-position-y: 50%;
 }
 
 /* ---------- FOOTER ---------- */
+
 footer {
-    margin-top: 2rem;
-    min-height: 5rem;
-    background-color: black;
+    position: relative;
+    width: 100%;
+    background: #000;
+    min-height: 50px;
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 90px;
 }
 
-.footerContainer {
-    padding-top: 1rem;
+.footerBox {
+    width: 100%;
 }
 
-.footerText a {
-    color: white;
-    text-decoration: none;
+.fbox01 {
+    color: var(--verdeclaro);
+}
+
+.fspan {
+    color: var(--blanco);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.fbox02 img {
+    border-radius: 15px;
+    width: 5rem;
+}
+
+.fbox03 img {
+    width: 3rem;
+}
+
+
+.footer_ty p {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: var(--blanco);
+    font-weight: 400;
+}
+
+footer .ola {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: url(/assets/images/wave11.png);
+    background-size: 1300px 50px;
+}
+
+.ola#ola1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 5.5s linear infinite;
+}
+
+.ola#ola2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 0px;
+    animation: animateWave_02 5.5s linear infinite;
+}
+
+.ola#ola3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 0px;
+    animation: animateWave 4.5s linear infinite;
+}
+
+.ola#ola4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 0px;
+    animation: animateWave_02 4.5s linear infinite;
+}
+
+
+@keyframes animateWave {
+    0% {
+        background-position-x: 1300px;
+    }
+
+    100% {
+        background-position-x: 0px;
+    }
+}
+
+@keyframes animateWave_02 {
+    0% {
+        background-position-x: 0px;
+    }
+
+    100% {
+        background-position-x: 1300px;
+    }
+}
+
+@keyframes animateWave_03 {
+    0% {
+        background-position-x: 0px;
+    }
+
+    100% {
+        background-position-x: 1300px;
+    }
+}
+
+@keyframes animateWave_04 {
+    0% {
+        background-position-x: 0px;
+    }
+
+    100% {
+        background-position-x: 1300px;
+    }
+}
+
+/* Footer media */
+@media screen and (max-width: 960px) {
+    .bannerIndex {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .footer_ty p {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .footerBox {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .fbox03 {
+        gap: 10px;
+    }
 }

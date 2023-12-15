@@ -4,18 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Eco Wave | Noticias</title>
+    <!-- Icon -->
+    <link rel="shortcut icon" href="./assets/images/favicon02.png" type="image/x-icon">
+    <!-- Google fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+    <!-- CSS -->
     <link rel="stylesheet" href="./assets/styles/noticias.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Noticias</title>
+    <!-- Bootstrap CSS (Version 5.3.0-alpha3) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
 </head>
 
 <body>
 
     <header class="d-flex justify-content-center align-items-center">
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navContainer">
             <div class="container-fluid justify-content-between">
-                <a class="navbar-brand" href="./index.html"><img class="icono" src="./assets/images/logo02.jpg" alt="icono"></a>
+                <a class="navbar-brand" href="#"><img class="icono" src="./assets/images/icon05.png" alt="icono"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -23,13 +33,13 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" href="./index.html">Home</a>
+                            <a class="nav-link" href="./index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./reciclaje.html">Reciclaje</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Noticias</a>
+                            <a class="nav-link active" href="#">Noticias</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./videos.html">Videos</a>
@@ -42,180 +52,229 @@
             </div>
         </nav>
     </header>
-    <section class="wrapper">
-        <div class="container-fostrap">
-            <div>
-                <img src="./assets/images/planta.png" class="fostrap-logo"/>
-                <h1 class="heading titulo">
-                    NOTICIAS
-                </h1>
-            </div>
-            <div class="content">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-4">
-                            <div class="card">
-                                <a class="img-card" href="https://www.santander.com/es/stories/reducir-reciclar-y-reutilizar-la-regla-de-las-tres-r-a-favor-del-planeta">
-                                <img src="./assets/images/chica.jpg" />
-                              </a>
-                                <div class="card-content">
-                                    <h4 class="card-title">
-                                        <a href="https://www.santander.com/es/stories/reducir-reciclar-y-reutilizar-la-regla-de-las-tres-r-a-favor-del-planeta" class="titulo"> Reducir, reciclar y reutilizar: la regla de las tres “r”, a favor del planeta
-                                      </a>
-                                    </h4>
-                                    <p class="">
-                                        A nivel mundial, cada minuto se vende alrededor de un millón de bebidas cuyos recipientes están fabricados...
-                                    </p>
-                                </div>
-                                <div class="card-read-more">
-                                    <a href="https://www.santander.com/es/stories/reducir-reciclar-y-reutilizar-la-regla-de-las-tres-r-a-favor-del-planeta" class="btn btn-link btn-block">
-                                        Continuar Leyendo
-                                    </a>
-                                </div>
-                            </div>
+    <main>
+        <section class="wrapper">
+            <div class="container-fostrap">
+                <div>
+                    <img src="./assets/images/planta.png" class="fostrap-logo" />
+                    <section d-flex justify-content-center align-items-center">
+                        <h1 class="imgText"><span id="spanImgText">Más </span>Noticias</h1>
+                    </section>
+                </div>
+
+                <div class="d-flex flex-wrap justify-content-around align-items-center gap-1">
+                    <div class="card">
+                        <a class="img-card"
+                            href="https://www.santander.com/es/stories/reducir-reciclar-y-reutilizar-la-regla-de-las-tres-r-a-favor-del-planeta"
+                            target="_blank">
+                            <img src="./assets/images/chica.jpg" />
+                        </a>
+                        <div class="card-content">
+                            <h4 class="card-title">
+                                <a href="https://www.santander.com/es/stories/reducir-reciclar-y-reutilizar-la-regla-de-las-tres-r-a-favor-del-planeta"
+                                    class="titulo" target="_blank"> Reducir, reciclar y reutilizar: la regla de las tres
+                                    “R”, a
+                                    favor del planeta
+                                </a>
+                            </h4>
+                            <p class="">
+                                A nivel mundial, cada minuto se vende alrededor de un millón de bebidas
+                                cuyos
+                                recipientes están fabricados...
+                            </p>
                         </div>
-                        <div class="col-xs-12 col-sm-4">
-                            <div class="card">
-                                <a class="img-card" href="https://www.jll.es/es/analisis-y-tendencias/ciudades/7-ideas-para-mejorar-el-reciclaje">
-                                <img src="./assets/images/chico.jpg" />
-                              </a>
-                                <div class="card-content">
-                                    <h4 class="card-title">
-                                        <a href="https://www.jll.es/es/analisis-y-tendencias/ciudades/7-ideas-para-mejorar-el-reciclaje" class="titulo"> Hablemos de basura. La producimos todos, pero ¿sabemos qué hacer con ella?
-                                      </a>
-                                    </h4>
-                                    <p class="">
-                                        7 ideas para mejorar el reciclaje. Constantemente surgen nuevas formas de reciclar y nuevas formas de hablar de ello...
-                                    </p>
-                                </div>
-                                <div class="card-read-more">
-                                    <a href="https://www.jll.es/es/analisis-y-tendencias/ciudades/7-ideas-para-mejorar-el-reciclaje" class="btn btn-link btn-block">
-                                        Continuar Leyendo
-                                    </a>
-                                </div>
-                            </div>
+                        <div class="card-read-more">
+                            <a href="https://www.santander.com/es/stories/reducir-reciclar-y-reutilizar-la-regla-de-las-tres-r-a-favor-del-planeta"
+                                class="btn btn-link btn-block" target="_blank">
+                                Continuar Leyendo
+                            </a>
                         </div>
-                        <div class="col-xs-12 col-sm-4">
-                            <div class="card">
-                                <a class="img-card" href="https://www.clarin.com/buena-vida/reciclaje-estilo-vida_0_HyY7N0Jsvmg.html">
-                                <img src="./assets/images/nenes.jpg" />
-                              </a>
-                                <div class="card-content">
-                                    <h4 class="card-title">
-                                        <a href="https://www.clarin.com/buena-vida/reciclaje-estilo-vida_0_HyY7N0Jsvmg.html" class="titulo">Reciclaje cotidiano, un simple estilo de vida que muchos optan cada vez más
-                                      </a>
-                                    </h4>
-                                    <p class="">
-                                        En la actualidad muchos de los productos que usamos cotidianamente pueden ser reciclados sin que lo sepamos...
-                                    </p>
-                                </div>
-                                <div class="card-read-more">
-                                    <a href="https://www.clarin.com/buena-vida/reciclaje-estilo-vida_0_HyY7N0Jsvmg.html" class="btn btn-link btn-block">
-                                        Continuar Leyendo
-                                    </a>
-                                </div>
-                            </div>
-                            
+                    </div>
+
+                    <div class="card">
+                        <a class="img-card"
+                            href="https://www.jll.es/es/analisis-y-tendencias/ciudades/7-ideas-para-mejorar-el-reciclaje"
+                            target="_blank">
+                            <img src="./assets/images/chico.jpg" />
+                        </a>
+                        <div class="card-content">
+                            <h4 class="card-title">
+                                <a href="https://www.jll.es/es/analisis-y-tendencias/ciudades/7-ideas-para-mejorar-el-reciclaje"
+                                    class="titulo" target="_blank"> Hablemos de basura. La producimos todos, pero
+                                    ¿sabemos
+                                    qué
+                                    hacer con ella?
+                                </a>
+                            </h4>
+                            <p class="">
+                                7 ideas para mejorar el reciclaje. Constantemente surgen nuevas formas de
+                                reciclar y nuevas formas de hablar de ello...
+                            </p>
+                        </div>
+                        <div class="card-read-more">
+                            <a href="https://www.jll.es/es/analisis-y-tendencias/ciudades/7-ideas-para-mejorar-el-reciclaje"
+                                class="btn btn-link btn-block" target="_blank">
+                                Continuar Leyendo
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <a class="img-card"
+                            href="https://www.clarin.com/buena-vida/reciclaje-estilo-vida_0_HyY7N0Jsvmg.html"
+                            target="_blank">
+                            <img src="./assets/images/nenes.jpg" />
+                        </a>
+                        <div class="card-content">
+                            <h4 class="card-title">
+                                <a href="https://www.clarin.com/buena-vida/reciclaje-estilo-vida_0_HyY7N0Jsvmg.html"
+                                    class="titulo" target="_blank">Reciclaje cotidiano, un simple estilo de vida que
+                                    muchos
+                                    optan cada vez más
+                                </a>
+                            </h4>
+                            <p class="">
+                                En la actualidad muchos de los productos que usamos cotidianamente pueden
+                                ser
+                                reciclados sin que lo sepamos...
+                            </p>
+                        </div>
+                        <div class="card-read-more">
+                            <a href="https://www.clarin.com/buena-vida/reciclaje-estilo-vida_0_HyY7N0Jsvmg.html"
+                                class="btn btn-link btn-block" target="_blank">
+                                Continuar Leyendo
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!--FIN CARD VERTICAL PRINCIPAL-->
+        </section>
+        <!--FIN CARD VERTICAL PRINCIPAL-->
 
-    <section class="wrapper">
-        <div class="container-fostrap">
-            <div>
-                <img src="./assets/images/mundo.png" class="fostrap-logo-mundo"/>
-             
-            </div>
-            <div class="content">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-4">
-                            <div class="card">
-                                <a class="img-card" href="https://blog.alanniaresorts.com/juegos-para-reciclar-con-ninos">
-                                <img src="./assets/images/niños_jugando.jpg" />
-                              </a>
-                                <div class="card-content">
-                                    <h4 class="card-title">
-                                        <a href="https://blog.alanniaresorts.com/juegos-para-reciclar-con-ninos" class="titulo"> Juegos para reciclar con niños y que aprendan a proteger el planeta
-                                      </a>
-                                    </h4>
-                                    <p class="">
-                                        En la mano de los niños está cuidar del planeta. Por eso, es muy importante inculcarles desde pequeños el hábito del reciclaje...
-                                    </p>
-                                </div>
-                                <div class="card-read-more">
-                                    <a href="https://blog.alanniaresorts.com/juegos-para-reciclar-con-ninos" class="btn btn-link btn-block">
-                                        Continuar Leyendo
-                                    </a>
-                                </div>
-                            </div>
+        <section class="wrapper">
+            <div class="container-fostrap">
+                <div class="logoMundo">
+                </div>
+                <div class="d-flex flex-wrap justify-content-around align-items-center gap-1">
+                    <div class="card">
+                        <a class="img-card" href="https://blog.alanniaresorts.com/juegos-para-reciclar-con-ninos"
+                            target="_blank">
+                            <img src="./assets/images/niños_jugando.jpg" />
+                        </a>
+                        <div class="card-content">
+                            <h4 class="card-title">
+                                <a href="https://blog.alanniaresorts.com/juegos-para-reciclar-con-ninos" class="titulo"
+                                    target="_blank">
+                                    Juegos para reciclar con niños y que aprendan a proteger
+                                    el
+                                    planeta
+                                </a>
+                            </h4>
+                            <p class="">
+                                En la mano de los niños está cuidar del planeta. Por eso, es muy importante
+                                inculcarles desde pequeños el hábito del reciclaje...
+                            </p>
                         </div>
-                        <div class="col-xs-12 col-sm-4">
-                            <div class="card">
-                                <a class="img-card" href="https://www.elmueble.com/orden-limpieza-ahorro/cosas-que-puedes-reutilizar-tu-casa-y-no-sabias_47984">
-                                <img src="./assets/images/cosas_en_casa.jpg" />
-                              </a>
-                                <div class="card-content">
-                                    <h4 class="card-title">
-                                        <a href="https://www.elmueble.com/orden-limpieza-ahorro/cosas-que-puedes-reutilizar-tu-casa-y-no-sabias_47984" class="titulo"> 12 cosas que puedes reutilizar de tu casa y no lo sabías hasta ahora
-                                      </a>
-                                    </h4>
-                                    <p class="">
-                                        Con pequeñas acciones y grandes ideas es posible limitar la cantidad de residuos que generamos todos los días. Descubre de qué forma tan sencilla...
-                                    </p>
-                                </div>
-                                <div class="card-read-more">
-                                    <a href="https://www.elmueble.com/orden-limpieza-ahorro/cosas-que-puedes-reutilizar-tu-casa-y-no-sabias_47984" class="btn btn-link btn-block">
-                                        Continuar Leyendo
-                                    </a>
-                                </div>
-                            </div>
+                        <div class="card-read-more">
+                            <a href="https://blog.alanniaresorts.com/juegos-para-reciclar-con-ninos"
+                                class="btn btn-link btn-block" target="_blank">
+                                Continuar Leyendo
+                            </a>
                         </div>
-                        <div class="col-xs-12 col-sm-4">
-                            <div class="card">
-                                <a class="img-card" href="https://www.elmueble.com/ideas/decoterapia/50-cosas-que-tienes-casa-y-deberias-tirar-ya_42072">
-                                <img src="./assets/images/cosas_en_casa_dos.jpg" />
-                              </a>
-                                <div class="card-content">
-                                    <h4 class="card-title">
-                                        <a href="https://www.elmueble.com/ideas/decoterapia/50-cosas-que-tienes-casa-y-deberias-tirar-ya_42072" class="titulo">50 cosas que tienes en casa y que no sabias que deberías tirar ya 
-                                      </a>
-                                    </h4>
-                                    <p class="">
-                                        Reconoce que nunca has vuelto a mirar en esa caja en la que, según tú, guardas cosas importantes. ¿No crees que va siendo hora de que te deshagas de ellas?
-                                    </p>
-                                </div>
-                                <div class="card-read-more">
-                                    <a href="https://www.elmueble.com/ideas/decoterapia/50-cosas-que-tienes-casa-y-deberias-tirar-ya_42072" class="btn btn-link btn-block">
-                                        Continuar Leyendo
-                                    </a>
-                                </div>
-                            </div>
+                    </div>
+
+                    <div class="card">
+                        <a class="img-card"
+                            href="https://www.elmueble.com/orden-limpieza-ahorro/cosas-que-puedes-reutilizar-tu-casa-y-no-sabias_47984"
+                            target="_blank">
+                            <img src="./assets/images/cosas_en_casa.jpg" />
+                        </a>
+                        <div class="card-content">
+                            <h4 class="card-title">
+                                <a href="https://www.elmueble.com/orden-limpieza-ahorro/cosas-que-puedes-reutilizar-tu-casa-y-no-sabias_47984"
+                                    class="titulo" target="_blank"> 12 cosas que puedes reutilizar de tu casa y no lo
+                                    sabías
+                                    hasta ahora
+                                </a>
+                            </h4>
+                            <p class="">
+                                Con pequeñas acciones y grandes ideas es posible limitar la cantidad de
+                                residuos
+                                que generamos todos los días. Descubre de qué forma tan sencilla...
+                            </p>
+                        </div>
+                        <div class="card-read-more">
+                            <a href="https://www.elmueble.com/orden-limpieza-ahorro/cosas-que-puedes-reutilizar-tu-casa-y-no-sabias_47984"
+                                class="btn btn-link btn-block" target="_blank">
+                                Continuar Leyendo
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <a class="img-card"
+                            href="https://www.elmueble.com/ideas/decoterapia/50-cosas-que-tienes-casa-y-deberias-tirar-ya_42072"
+                            target="_blank">
+                            <img src="./assets/images/cosas_en_casa_dos.jpg" />
+                        </a>
+                        <div class="card-content">
+                            <h4 class="card-title">
+                                <a href="https://www.elmueble.com/ideas/decoterapia/50-cosas-que-tienes-casa-y-deberias-tirar-ya_42072"
+                                    class="titulo">50 cosas que tienes en casa y que no sabias que deberías
+                                    tirar ya
+                                </a>
+                            </h4>
+                            <p class="">
+                                Reconoce que nunca has vuelto a mirar en esa caja en la que, según tú,
+                                guardas
+                                cosas importantes. ¿No crees que va siendo hora de que te deshagas de ellas?
+                            </p>
+                        </div>
+                        <div class="card-read-more">
+                            <a href="https://www.elmueble.com/ideas/decoterapia/50-cosas-que-tienes-casa-y-deberias-tirar-ya_42072"
+                                class="btn btn-link btn-block" target="_blank">
+                                Continuar Leyendo
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-       <!--FIN SEGUNDA SECTION CARDS NOTICIAS-->
-    </section>
-    <section class="wrapper">
-        <div class="container-fostrap">
-    <div>
-        <img src="./assets/images/manos_mundo.png" class="fostrap-logo-mundo-manos"/>
-    </div>
-</div>
-</section>
-<footer>
-    <section class="footerContainer d-flex flex-column align-items-center">
-        <p class="footerText"><a id="end" href="./about.html">¿Quiénes Somos?</a></p>
-        <p class="footerText"><a id="end" href="./videos.html">Videos</a></p>
-        <p class="footerText"><a id="end" href="#">Noticias</a></p>
-    </section>
-</footer>
+            <!--FIN SEGUNDA SECTION CARDS NOTICIAS-->
+        </section>
+        <section class="wrapper">
+            <div class="logoManos">
+            </div>
+        </section>
 
+    </main>
+
+    <footer>
+        <div class="footer_olas">
+            <div class="ola" id="ola1"></div>
+            <div class="ola" id="ola2"></div>
+            <div class="ola" id="ola3"></div>
+            <div class="ola" id="ola4"></div>
+        </div>
+        <div class="footerBox d-flex flex-wrap align-items-center justify-content-around">
+            <section class="fbox01">
+                <p>2023<span class="fspan">DebugginsDemons</span></p>
+            </section>
+            <section class="fbox02">
+                <img src="./assets/images/Debugging-Demons-logo.png" alt="logo debugging demons">
+            </section>
+            <section class="fbox03 d-flex flex-column">
+                <a href="https://inkua.de/" target="_blank"><img src="./assets/images/logo_inkua.png"></a>
+                <a href="https://www.frsr.utn.edu.ar/" target="_blank"><img src="./assets/images/logo_utn.png"></a>
+            </section>
+        </div>
+        <div class="footer_ty">
+            <p>| Debuggins Demons Team agradece el apoyo y la guía brindados por los coordinadores |</p>
+        </div>
+    </footer>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
