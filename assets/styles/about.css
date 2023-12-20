@@ -123,8 +123,9 @@ header {
     width: 80%;
     font-size: 1rem;
     text-align: center;
-    font-weight: 500;
+    font-weight: bold;
     color: var(--grisoscuro);
+    margin-top: 2rem;
 }
 
 /* Equipo */
